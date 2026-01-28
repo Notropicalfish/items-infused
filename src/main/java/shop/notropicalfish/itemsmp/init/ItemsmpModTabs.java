@@ -20,5 +20,6 @@ public class ItemsmpModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.itemsmp.item_smp")).icon(() -> new ItemStack(Items.AMETHYST_SHARD)).displayItems((parameters, tabData) -> {
 				tabData.accept(ItemsmpModItems.MAGICCRYSTAL.get());
 				tabData.accept(ItemsmpModItems.LUCKY_PICK.get());
+				tabData.accept(ItemsmpModItems.AETHER_BLADE.get());
 			}).build());
 }
