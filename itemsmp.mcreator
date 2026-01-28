@@ -39,7 +39,7 @@
           "src/main/java/shop/notropicalfish/itemsmp/procedures/MagiccrystalItemInHandTickProcedure.java"
         ]
       },
-      "path": "~/functions"
+      "path": "~/items/Magic Crystal"
     },
     {
       "name": "Magiccrystal",
@@ -53,7 +53,7 @@
           "src/main/java/shop/notropicalfish/itemsmp/item/MagiccrystalItem.java"
         ]
       },
-      "path": "~/items"
+      "path": "~/items/Magic Crystal"
     },
     {
       "name": "LuckyPickToolInHandTick",
@@ -88,7 +88,7 @@
           "src/main/java/shop/notropicalfish/itemsmp/procedures/LuckyPickToolInHandTickProcedure.java"
         ]
       },
-      "path": "~/functions"
+      "path": "~/items/Lucky Pick"
     },
     {
       "name": "LuckyPickLivingEntityIsHitWithTool",
@@ -107,7 +107,7 @@
           "src/main/java/shop/notropicalfish/itemsmp/procedures/LuckyPickLivingEntityIsHitWithToolProcedure.java"
         ]
       },
-      "path": "~/functions"
+      "path": "~/items/Lucky Pick"
     },
     {
       "name": "LuckyPick",
@@ -121,7 +121,7 @@
           "src/main/resources/assets/itemsmp/models/item/lucky_pick.json"
         ]
       },
-      "path": "~/items"
+      "path": "~/items/Lucky Pick"
     },
     {
       "name": "AetherBladeLivingEntityIsHitWithTool",
@@ -160,7 +160,7 @@
           "src/main/java/shop/notropicalfish/itemsmp/procedures/AetherBladeLivingEntityIsHitWithToolProcedure.java"
         ]
       },
-      "path": "~/functions"
+      "path": "~/items/AetherBlade"
     },
     {
       "name": "AetherBladeToolInHandTick",
@@ -191,7 +191,7 @@
           "src/main/java/shop/notropicalfish/itemsmp/procedures/AetherBladeToolInHandTickProcedure.java"
         ]
       },
-      "path": "~/functions"
+      "path": "~/items/AetherBlade"
     },
     {
       "name": "AetherBlade",
@@ -205,7 +205,21 @@
           "src/main/java/shop/notropicalfish/itemsmp/item/AetherBladeItem.java"
         ]
       },
-      "path": "~/items"
+      "path": "~/items/AetherBlade"
+    },
+    {
+      "name": "CraftLuckyPick",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_lucky_pick",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/advancement/recipes/craft_lucky_pick.json",
+          "src/main/resources/data/itemsmp/recipe/craft_lucky_pick.json"
+        ]
+      },
+      "path": "~/items/Lucky Pick"
     }
   ],
   "variable_elements": [],
@@ -241,11 +255,20 @@
     "children": [
       {
         "name": "items",
-        "children": []
-      },
-      {
-        "name": "functions",
-        "children": []
+        "children": [
+          {
+            "name": "AetherBlade",
+            "children": []
+          },
+          {
+            "name": "Lucky Pick",
+            "children": []
+          },
+          {
+            "name": "Magic Crystal",
+            "children": []
+          }
+        ]
       }
     ]
   },
