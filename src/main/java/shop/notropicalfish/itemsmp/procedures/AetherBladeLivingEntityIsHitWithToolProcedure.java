@@ -10,9 +10,11 @@ public class AetherBladeLivingEntityIsHitWithToolProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (world instanceof Level _level && !_level.isClientSide())
-			_level.explode(null, x, y, z, 1, Level.ExplosionInteraction.BLOCK);
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack.getItem(), 100);
+		if (!(entity instanceof Player _plrCldCheck1 && _plrCldCheck1.getCooldowns().isOnCooldown(itemstack.getItem()))) {
+			if (world instanceof Level _level && !_level.isClientSide())
+				_level.explode(null, x, y, z, 1, Level.ExplosionInteraction.NONE);
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack.getItem(), 500);
+		}
 	}
 }

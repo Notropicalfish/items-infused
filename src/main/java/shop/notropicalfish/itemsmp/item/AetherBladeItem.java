@@ -53,7 +53,7 @@ public class AetherBladeItem extends SwordItem {
 	};
 
 	public AetherBladeItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 6f, -3f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 4f, 1f)).fireResistant());
 	}
 
 	@Override
