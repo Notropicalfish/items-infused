@@ -1,0 +1,11 @@
+{
+  "_fv": 79,
+  "_type": "tab",
+  "definition": {
+    "name": "Item Smp",
+    "icon": {
+      "value": "Items.AMETHYST_SHARD"
+    },
+    "showSearch": false
+  }
+}

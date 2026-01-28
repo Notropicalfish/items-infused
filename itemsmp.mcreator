@@ -1,0 +1,180 @@
+{
+  "mod_elements": [
+    {
+      "name": "ItemSMP",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "item_smp",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "MagiccrystalItemInHandTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magiccrystal_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/MagiccrystalItemInHandTickProcedure.java"
+        ]
+      },
+      "path": "~/functions"
+    },
+    {
+      "name": "Magiccrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magiccrystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itemsmp/models/item/magiccrystal.json",
+          "src/main/java/shop/notropicalfish/itemsmp/item/MagiccrystalItem.java"
+        ]
+      },
+      "path": "~/items"
+    },
+    {
+      "name": "LuckyPickToolInHandTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lucky_pick_tool_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/LuckyPickToolInHandTickProcedure.java"
+        ]
+      },
+      "path": "~/functions"
+    },
+    {
+      "name": "LuckyPickLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lucky_pick_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/LuckyPickLivingEntityIsHitWithToolProcedure.java"
+        ]
+      },
+      "path": "~/functions"
+    },
+    {
+      "name": "LuckyPick",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lucky_pick",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/item/LuckyPickItem.java",
+          "src/main/resources/assets/itemsmp/models/item/lucky_pick.json"
+        ]
+      },
+      "path": "~/items"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:LuckyPick"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item_group.itemsmp.item_smp": "Item Smp",
+      "item.itemsmp.magiccrystal": "Magic Crystal",
+      "item.itemsmp.lucky_pick": "Lucky Pick"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModItems.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
+      "src/main/resources/pack.mcmeta"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "items",
+        "children": []
+      },
+      {
+        "name": "functions",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "itemsmp",
+    "modName": "ItemSMP",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "modElementsPackage": "shop.notropicalfish.itemsmp"
+  },
+  "mcreatorVersion": 202500345720
+}
