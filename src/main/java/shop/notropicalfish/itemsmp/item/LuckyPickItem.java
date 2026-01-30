@@ -29,7 +29,7 @@ public class LuckyPickItem extends PickaxeItem {
 
 		@Override
 		public float getSpeed() {
-			return 4f;
+			return 5f;
 		}
 
 		@Override

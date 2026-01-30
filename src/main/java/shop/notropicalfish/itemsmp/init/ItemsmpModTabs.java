@@ -21,5 +21,6 @@ public class ItemsmpModTabs {
 				tabData.accept(ItemsmpModItems.MAGICCRYSTAL.get());
 				tabData.accept(ItemsmpModItems.LUCKY_PICK.get());
 				tabData.accept(ItemsmpModItems.AETHER_BLADE.get());
+				tabData.accept(ItemsmpModItems.ALL_KNOWING_ORANGE.get());
 			}).build());
 }

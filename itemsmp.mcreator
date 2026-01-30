@@ -220,6 +220,39 @@
         ]
       },
       "path": "~/items/Lucky Pick"
+    },
+    {
+      "name": "AllKnowingOrange",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "all_knowing_orange",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/item/AllKnowingOrangeItem.java",
+          "src/main/resources/assets/itemsmp/models/item/all_knowing_orange.json"
+        ]
+      },
+      "path": "~/items/allknowingorange"
+    },
+    {
+      "name": "AllKnowingOrangeRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "all_knowing_orange_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/AllKnowingOrangeRightclickedOnBlockProcedure.java"
+        ]
+      },
+      "path": "~/items/allknowingorange"
     }
   ],
   "variable_elements": [],
@@ -238,7 +271,8 @@
       "item_group.itemsmp.item_smp": "Item Smp",
       "item.itemsmp.magiccrystal": "Magic Crystal",
       "item.itemsmp.lucky_pick": "Lucky Pick",
-      "item.itemsmp.aether_blade": "Aether Blade"
+      "item.itemsmp.aether_blade": "Aether Blade",
+      "item.itemsmp.all_knowing_orange": "All Knowing Orange"
     }
   },
   "metadata": {
@@ -266,6 +300,10 @@
           },
           {
             "name": "Magic Crystal",
+            "children": []
+          },
+          {
+            "name": "allknowingorange",
             "children": []
           }
         ]

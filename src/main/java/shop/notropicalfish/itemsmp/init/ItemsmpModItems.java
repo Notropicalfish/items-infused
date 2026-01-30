@@ -5,6 +5,7 @@ package shop.notropicalfish.itemsmp.init;
 
 import shop.notropicalfish.itemsmp.item.MagiccrystalItem;
 import shop.notropicalfish.itemsmp.item.LuckyPickItem;
+import shop.notropicalfish.itemsmp.item.AllKnowingOrangeItem;
 import shop.notropicalfish.itemsmp.item.AetherBladeItem;
 import shop.notropicalfish.itemsmp.ItemsmpMod;
 
@@ -18,10 +19,12 @@ public class ItemsmpModItems {
 	public static final DeferredItem<Item> MAGICCRYSTAL;
 	public static final DeferredItem<Item> LUCKY_PICK;
 	public static final DeferredItem<Item> AETHER_BLADE;
+	public static final DeferredItem<Item> ALL_KNOWING_ORANGE;
 	static {
 		MAGICCRYSTAL = REGISTRY.register("magiccrystal", MagiccrystalItem::new);
 		LUCKY_PICK = REGISTRY.register("lucky_pick", LuckyPickItem::new);
 		AETHER_BLADE = REGISTRY.register("aether_blade", AetherBladeItem::new);
+		ALL_KNOWING_ORANGE = REGISTRY.register("all_knowing_orange", AllKnowingOrangeItem::new);
 	}
 	// Start of user code block custom items
 	// End of user code block custom items
