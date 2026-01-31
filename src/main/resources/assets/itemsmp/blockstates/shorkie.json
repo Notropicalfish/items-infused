@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "itemsmp:block/shorkie"
+    },
+    "facing=east": {
+      "model": "itemsmp:block/shorkie",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "itemsmp:block/shorkie",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "itemsmp:block/shorkie",
+      "y": 270
+    }
+  }
+}

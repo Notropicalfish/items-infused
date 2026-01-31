@@ -1,6 +1,8 @@
 package shop.notropicalfish.itemsmp;
 
+import shop.notropicalfish.itemsmp.network.ItemsmpModVariables;
 import shop.notropicalfish.itemsmp.init.ItemsmpModTabs;
+import shop.notropicalfish.itemsmp.init.ItemsmpModSounds;
 import shop.notropicalfish.itemsmp.init.ItemsmpModItems;
 import shop.notropicalfish.itemsmp.init.ItemsmpModBlocks;
 
@@ -39,9 +41,11 @@ public class ItemsmpMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		ItemsmpModSounds.REGISTRY.register(modEventBus);
 		ItemsmpModBlocks.REGISTRY.register(modEventBus);
 		ItemsmpModItems.REGISTRY.register(modEventBus);
 		ItemsmpModTabs.REGISTRY.register(modEventBus);
+		ItemsmpModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

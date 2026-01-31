@@ -7,8 +7,8 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -17,8 +17,10 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.network.chat.Component;
+
+import java.util.List;
 
 public class AllKnowingOrangeItem extends Item {
 	public AllKnowingOrangeItem() {
@@ -49,16 +51,18 @@ public class AllKnowingOrangeItem extends Item {
 	}
 
 	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		AllKnowingOrangeEntitySwingsItemProcedure.execute(entity, ar.getObject());
-		return ar;
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
+		list.add(Component.translatable("item.itemsmp.all_knowing_orange.description_0"));
+		list.add(Component.translatable("item.itemsmp.all_knowing_orange.description_1"));
+		list.add(Component.translatable("item.itemsmp.all_knowing_orange.description_2"));
 	}
 
 	@Override
-	public InteractionResult useOn(UseOnContext context) {
-		super.useOn(context);
-		AllKnowingOrangeEntitySwingsItemProcedure.execute(context.getPlayer(), context.getItemInHand());
-		return InteractionResult.SUCCESS;
+	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
+		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+		AllKnowingOrangeEntitySwingsItemProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
+		return ar;
 	}
 }

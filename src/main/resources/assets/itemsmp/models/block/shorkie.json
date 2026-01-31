@@ -1,0 +1,9 @@
+{
+  "parent": "itemsmp:custom/shorkie",
+  "textures": {
+    "all": "itemsmp:block/shork",
+    "particle": "itemsmp:block/shork",
+    "0": "itemsmp:block/shork"
+  },
+  "render_type": "cutout"
+}

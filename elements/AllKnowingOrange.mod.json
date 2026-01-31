@@ -32,7 +32,11 @@
     "enableMeleeDamage": true,
     "damageVsEntity": 3.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§8 The orange knows all and all knows the orange",
+        "§7 wait what am I even saying",
+        "§8 SUBSCRIBE TO ORANGE KING ON YOUTUBE!!"
+      ]
     },
     "glowCondition": {
       "fixedValue": true
@@ -40,9 +44,6 @@
     "inventorySize": 9,
     "inventoryStackSize": 99,
     "onRightClickedInAir": {
-      "name": "AllKnowingOrangeEntitySwingsItem"
-    },
-    "onRightClickedOnBlock": {
       "name": "AllKnowingOrangeEntitySwingsItem"
     },
     "enableRanged": false,

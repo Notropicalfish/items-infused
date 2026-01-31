@@ -160,7 +160,7 @@
           "src/main/java/shop/notropicalfish/itemsmp/procedures/AetherBladeLivingEntityIsHitWithToolProcedure.java"
         ]
       },
-      "path": "~/items/AetherBlade"
+      "path": "~/items/Aether Blade"
     },
     {
       "name": "AetherBladeToolInHandTick",
@@ -191,7 +191,7 @@
           "src/main/java/shop/notropicalfish/itemsmp/procedures/AetherBladeToolInHandTickProcedure.java"
         ]
       },
-      "path": "~/items/AetherBlade"
+      "path": "~/items/Aether Blade"
     },
     {
       "name": "AetherBlade",
@@ -205,7 +205,7 @@
           "src/main/java/shop/notropicalfish/itemsmp/item/AetherBladeItem.java"
         ]
       },
-      "path": "~/items/AetherBlade"
+      "path": "~/items/Aether Blade"
     },
     {
       "name": "CraftLuckyPick",
@@ -233,7 +233,7 @@
           "src/main/resources/assets/itemsmp/models/item/all_knowing_orange.json"
         ]
       },
-      "path": "~/items/allknowingorange"
+      "path": "~/items/All Knowing Orange"
     },
     {
       "name": "Setplayeritemuuid",
@@ -263,13 +263,29 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
           "src/main/java/shop/notropicalfish/itemsmp/procedures/AllKnowingOrangeEntitySwingsItemProcedure.java"
         ]
       },
-      "path": "~/items/allknowingorange"
+      "path": "~/items/All Knowing Orange"
     },
     {
       "name": "Blackheart",
@@ -283,7 +299,7 @@
           "src/main/resources/assets/itemsmp/models/item/blackheart.json"
         ]
       },
-      "path": "~/items/blackHeart"
+      "path": "~/items/Black Heart"
     },
     {
       "name": "Forevercursed",
@@ -296,7 +312,7 @@
           "src/main/resources/data/itemsmp/advancement/forevercursed.json"
         ]
       },
-      "path": "~/items/blackHeart"
+      "path": "~/items/Black Heart"
     },
     {
       "name": "BlackheartItemInInventoryTick",
@@ -319,7 +335,7 @@
           "src/main/java/shop/notropicalfish/itemsmp/procedures/BlackheartItemInInventoryTickProcedure.java"
         ]
       },
-      "path": "~/items/blackHeart"
+      "path": "~/items/Black Heart"
     },
     {
       "name": "Blackhorizern",
@@ -342,7 +358,7 @@
           "src/main/java/shop/notropicalfish/itemsmp/item/BlackhorizernItem.java"
         ]
       },
-      "path": "~/items/blackHeart"
+      "path": "~/items/Black Heart"
     },
     {
       "name": "Punishment",
@@ -359,11 +375,228 @@
           "src/main/resources/data/itemsmp/worldgen/placed_feature/punishment_tree.json"
         ]
       },
-      "path": "~/items/blackHeart"
+      "path": "~/items/Black Heart"
+    },
+    {
+      "name": "Shorkie",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shorkie",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itemsmp/models/item/shorkie.json",
+          "src/main/java/shop/notropicalfish/itemsmp/block/ShorkieBlock.java",
+          "src/main/resources/data/itemsmp/loot_table/blocks/shorkie.json",
+          "src/main/resources/assets/itemsmp/models/block/shorkie.json",
+          "src/main/resources/assets/itemsmp/blockstates/shorkie.json"
+        ]
+      },
+      "path": "~/items/Shorkie"
     }
   ],
-  "variable_elements": [],
-  "sound_elements": [],
+  "variable_elements": [
+    {
+      "name": "line",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "orangeline1",
+      "files": [
+        "orangeline1"
+      ],
+      "category": "master",
+      "subtitle": "Orange maes smart remark"
+    },
+    {
+      "name": "orangeline2",
+      "files": [
+        "orangevoice2"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline3",
+      "files": [
+        "orangeline3"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline4",
+      "files": [
+        "orangeline4"
+      ],
+      "category": "master",
+      "subtitle": "Orange make smart remark"
+    },
+    {
+      "name": "orangeline5",
+      "files": [
+        "orangeline5"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline6",
+      "files": [
+        "orangeline6"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline7",
+      "files": [
+        "orangeline7"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline8",
+      "files": [
+        "orangeline8"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline9",
+      "files": [
+        "orangeline9"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline10",
+      "files": [
+        "orangeline10"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline11",
+      "files": [
+        "orangeline11"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline12",
+      "files": [
+        "orangeline12"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline13",
+      "files": [
+        "orangeline13"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline14",
+      "files": [
+        "orangeline14"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline15",
+      "files": [
+        "orangeline15"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline16",
+      "files": [
+        "orangeline16"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline17",
+      "files": [
+        "orangeline17"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline18",
+      "files": [
+        "orangeline18"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline19",
+      "files": [
+        "orangeline19"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline20",
+      "files": [
+        "orangeline20"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline21",
+      "files": [
+        "orangeline21"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline22",
+      "files": [
+        "orangeline22"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline23",
+      "files": [
+        "orangeline23"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "orangeline24",
+      "files": [
+        "orangeline24"
+      ],
+      "category": "master",
+      "subtitle": "Orange makes smart remark"
+    }
+  ],
   "tag_elements": {
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:LuckyPick"
@@ -415,17 +648,48 @@
       "advancements.forevercursed.title": "Cursed till the end of time",
       "advancements.forevercursed.descr": "Watch your actions you are no longer free",
       "item.itemsmp.blackhorizern": "Blackhorizern Portal Igniter",
-      "biome.itemsmp.punishment": "Punishment"
+      "biome.itemsmp.punishment": "Punishment",
+      "item.itemsmp.all_knowing_orange.description_1": "§7 wait what am I even saying",
+      "item.itemsmp.all_knowing_orange.description_2": "§8 SUBSCRIBE TO ORANGE KING ON YOUTUBE!!",
+      "item.itemsmp.all_knowing_orange.description_0": "§8 The orange knows all and all knows the orange",
+      "subtitles.orangeline1": "Orange maes smart remark",
+      "subtitles.orangeline2": "Orange makes smart remark",
+      "subtitles.orangeline3": "Orange makes smart remark",
+      "subtitles.orangeline4": "Orange make smart remark",
+      "subtitles.orangeline5": "Orange makes smart remark",
+      "subtitles.orangeline6": "Orange makes smart remark",
+      "subtitles.orangeline7": "Orange makes smart remark",
+      "subtitles.orangeline8": "Orange makes smart remark",
+      "subtitles.orangeline9": "Orange makes smart remark",
+      "subtitles.orangeline10": "Orange makes smart remark",
+      "subtitles.orangeline11": "Orange makes smart remark",
+      "subtitles.orangeline12": "Orange makes smart remark",
+      "subtitles.orangeline13": "Orange makes smart remark",
+      "subtitles.orangeline14": "Orange makes smart remark",
+      "subtitles.orangeline15": "Orange makes smart remark",
+      "subtitles.orangeline16": "Orange makes smart remark",
+      "subtitles.orangeline17": "Orange makes smart remark",
+      "subtitles.orangeline18": "Orange makes smart remark",
+      "subtitles.orangeline19": "Orange makes smart remark",
+      "subtitles.orangeline20": "Orange makes smart remark",
+      "subtitles.orangeline21": "Orange makes smart remark",
+      "subtitles.orangeline22": "Orange makes smart remark",
+      "subtitles.orangeline23": "Orange makes smart remark",
+      "subtitles.orangeline24": "Orange makes smart remark",
+      "block.itemsmp.shorkie": "Shorkie"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModBlocks.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModItems.java",
+      "src/main/resources/assets/itemsmp/sounds.json",
       "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModSounds.java",
       "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
+      "src/main/java/shop/notropicalfish/itemsmp/network/ItemsmpModVariables.java",
       "src/main/resources/pack.mcmeta"
     ]
   },
@@ -436,7 +700,7 @@
         "name": "items",
         "children": [
           {
-            "name": "AetherBlade",
+            "name": "Aether Blade",
             "children": []
           },
           {
@@ -448,11 +712,59 @@
             "children": []
           },
           {
-            "name": "allknowingorange",
+            "name": "All Knowing Orange",
             "children": []
           },
           {
-            "name": "blackHeart",
+            "name": "Black Heart",
+            "children": []
+          },
+          {
+            "name": "Great Hammer",
+            "children": []
+          },
+          {
+            "name": "Abyssal Anchor",
+            "children": []
+          },
+          {
+            "name": "Void Axe",
+            "children": []
+          },
+          {
+            "name": "Shorkie",
+            "children": []
+          },
+          {
+            "name": "Emerald Katana",
+            "children": []
+          },
+          {
+            "name": "Short Chestplate",
+            "children": []
+          },
+          {
+            "name": "Wooden Clever",
+            "children": []
+          },
+          {
+            "name": "Knee High Cloak",
+            "children": []
+          },
+          {
+            "name": "Tunnle Pick",
+            "children": []
+          },
+          {
+            "name": "Cultivators Hoe",
+            "children": []
+          },
+          {
+            "name": "Rod of peace",
+            "children": []
+          },
+          {
+            "name": "Electric Dagger",
             "children": []
           }
         ]

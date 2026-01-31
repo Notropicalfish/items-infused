@@ -1,0 +1,218 @@
+{
+  "orangeline1": {
+    "subtitle": "subtitles.orangeline1",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline1",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline2": {
+    "subtitle": "subtitles.orangeline2",
+    "sounds": [
+      {
+        "name": "itemsmp:orangevoice2",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline3": {
+    "subtitle": "subtitles.orangeline3",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline3",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline4": {
+    "subtitle": "subtitles.orangeline4",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline4",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline5": {
+    "subtitle": "subtitles.orangeline5",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline5",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline6": {
+    "subtitle": "subtitles.orangeline6",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline6",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline7": {
+    "subtitle": "subtitles.orangeline7",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline7",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline8": {
+    "subtitle": "subtitles.orangeline8",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline8",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline9": {
+    "subtitle": "subtitles.orangeline9",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline9",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline10": {
+    "subtitle": "subtitles.orangeline10",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline10",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline11": {
+    "subtitle": "subtitles.orangeline11",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline11",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline12": {
+    "subtitle": "subtitles.orangeline12",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline12",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline13": {
+    "subtitle": "subtitles.orangeline13",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline13",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline14": {
+    "subtitle": "subtitles.orangeline14",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline14",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline15": {
+    "subtitle": "subtitles.orangeline15",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline15",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline16": {
+    "subtitle": "subtitles.orangeline16",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline16",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline17": {
+    "subtitle": "subtitles.orangeline17",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline17",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline18": {
+    "subtitle": "subtitles.orangeline18",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline18",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline19": {
+    "subtitle": "subtitles.orangeline19",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline19",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline20": {
+    "subtitle": "subtitles.orangeline20",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline20",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline21": {
+    "subtitle": "subtitles.orangeline21",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline21",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline22": {
+    "subtitle": "subtitles.orangeline22",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline22",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline23": {
+    "subtitle": "subtitles.orangeline23",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline23",
+        "stream": false
+      }
+    ]
+  },
+  "orangeline24": {
+    "subtitle": "subtitles.orangeline24",
+    "sounds": [
+      {
+        "name": "itemsmp:orangeline24",
+        "stream": false
+      }
+    ]
+  }
+}
