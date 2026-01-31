@@ -2,6 +2,7 @@ package shop.notropicalfish.itemsmp;
 
 import shop.notropicalfish.itemsmp.init.ItemsmpModTabs;
 import shop.notropicalfish.itemsmp.init.ItemsmpModItems;
+import shop.notropicalfish.itemsmp.init.ItemsmpModBlocks;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -38,6 +39,7 @@ public class ItemsmpMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		ItemsmpModBlocks.REGISTRY.register(modEventBus);
 		ItemsmpModItems.REGISTRY.register(modEventBus);
 		ItemsmpModTabs.REGISTRY.register(modEventBus);
 		// Start of user code block mod init

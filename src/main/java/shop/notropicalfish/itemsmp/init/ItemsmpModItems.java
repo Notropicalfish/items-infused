@@ -3,11 +3,7 @@
  */
 package shop.notropicalfish.itemsmp.init;
 
-import shop.notropicalfish.itemsmp.item.MagiccrystalItem;
-import shop.notropicalfish.itemsmp.item.LuckyPickItem;
-import shop.notropicalfish.itemsmp.item.BlackheartItem;
-import shop.notropicalfish.itemsmp.item.AllKnowingOrangeItem;
-import shop.notropicalfish.itemsmp.item.AetherBladeItem;
+import shop.notropicalfish.itemsmp.item.*;
 import shop.notropicalfish.itemsmp.ItemsmpMod;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -22,12 +18,14 @@ public class ItemsmpModItems {
 	public static final DeferredItem<Item> AETHER_BLADE;
 	public static final DeferredItem<Item> ALL_KNOWING_ORANGE;
 	public static final DeferredItem<Item> BLACKHEART;
+	public static final DeferredItem<Item> BLACKHORIZERN;
 	static {
 		MAGICCRYSTAL = REGISTRY.register("magiccrystal", MagiccrystalItem::new);
 		LUCKY_PICK = REGISTRY.register("lucky_pick", LuckyPickItem::new);
 		AETHER_BLADE = REGISTRY.register("aether_blade", AetherBladeItem::new);
 		ALL_KNOWING_ORANGE = REGISTRY.register("all_knowing_orange", AllKnowingOrangeItem::new);
 		BLACKHEART = REGISTRY.register("blackheart", BlackheartItem::new);
+		BLACKHORIZERN = REGISTRY.register("blackhorizern", BlackhorizernItem::new);
 	}
 	// Start of user code block custom items
 	// End of user code block custom items

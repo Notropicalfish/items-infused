@@ -23,5 +23,6 @@ public class ItemsmpModTabs {
 				tabData.accept(ItemsmpModItems.AETHER_BLADE.get());
 				tabData.accept(ItemsmpModItems.ALL_KNOWING_ORANGE.get());
 				tabData.accept(ItemsmpModItems.BLACKHEART.get());
+				tabData.accept(ItemsmpModItems.BLACKHORIZERN.get());
 			}).build());
 }

@@ -320,6 +320,46 @@
         ]
       },
       "path": "~/items/blackHeart"
+    },
+    {
+      "name": "Blackhorizern",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackhorizern",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itemsmp/models/block/blackhorizern_portal_ew.json",
+          "src/main/resources/data/itemsmp/dimension_type/blackhorizern.json",
+          "src/main/java/shop/notropicalfish/itemsmp/world/teleporter/BlackhorizernTeleporter.java",
+          "src/main/resources/assets/itemsmp/models/item/blackhorizern.json",
+          "src/main/java/shop/notropicalfish/itemsmp/block/BlackhorizernPortalBlock.java",
+          "src/main/resources/assets/itemsmp/models/block/blackhorizern_portal_ns.json",
+          "src/main/java/shop/notropicalfish/itemsmp/world/teleporter/BlackhorizernPortalShape.java",
+          "src/main/resources/assets/itemsmp/blockstates/blackhorizern_portal.json",
+          "src/main/java/shop/notropicalfish/itemsmp/world/dimension/BlackhorizernDimension.java",
+          "src/main/resources/data/itemsmp/dimension/blackhorizern.json",
+          "src/main/java/shop/notropicalfish/itemsmp/item/BlackhorizernItem.java"
+        ]
+      },
+      "path": "~/items/blackHeart"
+    },
+    {
+      "name": "Punishment",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "punishment",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/world/features/treedecorators/PunishmentTrunkDecorator.java",
+          "src/main/resources/data/itemsmp/worldgen/configured_feature/punishment_tree.json",
+          "src/main/java/shop/notropicalfish/itemsmp/world/features/treedecorators/PunishmentLeaveDecorator.java",
+          "src/main/resources/data/itemsmp/worldgen/biome/punishment.json",
+          "src/main/resources/data/itemsmp/worldgen/placed_feature/punishment_tree.json"
+        ]
+      },
+      "path": "~/items/blackHeart"
     }
   ],
   "variable_elements": [],
@@ -330,6 +370,37 @@
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:AetherBlade"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.CONCRETE_POWDER#15",
+      "~Blocks.CONCRETE#15"
+    ],
+    "BIOMES:minecraft:has_structure/igloo": [
+      "~CUSTOM:Punishment"
+    ],
+    "BIOMES:minecraft:has_structure/swamp_hut": [
+      "~CUSTOM:Punishment"
+    ],
+    "BIOMES:minecraft:has_structure/shipwreck": [
+      "~CUSTOM:Punishment"
+    ],
+    "BIOMES:minecraft:has_structure/shipwreck_beached": [
+      "~CUSTOM:Punishment"
+    ],
+    "BIOMES:minecraft:has_structure/buried_treasure": [
+      "~CUSTOM:Punishment"
+    ],
+    "BIOMES:minecraft:has_structure/nether_fossil": [
+      "~CUSTOM:Punishment"
+    ],
+    "BIOMES:minecraft:has_structure/bastion_remnant": [
+      "~CUSTOM:Punishment"
+    ],
+    "BIOMES:minecraft:has_structure/ocean_ruin_cold": [
+      "~CUSTOM:Punishment"
+    ],
+    "BIOMES:minecraft:has_structure/ruined_portal_swamp": [
+      "~CUSTOM:Punishment"
     ]
   },
   "tab_element_order": {},
@@ -342,12 +413,16 @@
       "item.itemsmp.all_knowing_orange": "All Knowing Orange",
       "item.itemsmp.blackheart": "Black Heart of God",
       "advancements.forevercursed.title": "Cursed till the end of time",
-      "advancements.forevercursed.descr": "Watch your actions you are no longer free"
+      "advancements.forevercursed.descr": "Watch your actions you are no longer free",
+      "item.itemsmp.blackhorizern": "Blackhorizern Portal Igniter",
+      "biome.itemsmp.punishment": "Punishment"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModBlocks.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModItems.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",

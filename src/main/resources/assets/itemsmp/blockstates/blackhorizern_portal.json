@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "itemsmp:block/blackhorizern_portal_ew"
+    },
+    "axis=x": {
+      "model": "itemsmp:block/blackhorizern_portal_ns"
+    }
+  }
+}
