@@ -132,7 +132,7 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
+            "name": "sourceentity",
             "type": "entity"
           },
           {
@@ -236,23 +236,90 @@
       "path": "~/items/allknowingorange"
     },
     {
-      "name": "AllKnowingOrangeRightclickedOnBlock",
+      "name": "Setplayeritemuuid",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setplayeritemuuid",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/command/SetplayeritemuuidCommand.java"
+        ]
+      },
+      "path": "~/commands"
+    },
+    {
+      "name": "AllKnowingOrangeEntitySwingsItem",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "all_knowing_orange_rightclicked_on_block",
+      "registry_name": "all_knowing_orange_entity_swings_item",
       "metadata": {
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ],
         "files": [
-          "src/main/java/shop/notropicalfish/itemsmp/procedures/AllKnowingOrangeRightclickedOnBlockProcedure.java"
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/AllKnowingOrangeEntitySwingsItemProcedure.java"
         ]
       },
       "path": "~/items/allknowingorange"
+    },
+    {
+      "name": "Blackheart",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackheart",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/item/BlackheartItem.java",
+          "src/main/resources/assets/itemsmp/models/item/blackheart.json"
+        ]
+      },
+      "path": "~/items/blackHeart"
+    },
+    {
+      "name": "Forevercursed",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forevercursed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/advancement/forevercursed.json"
+        ]
+      },
+      "path": "~/items/blackHeart"
+    },
+    {
+      "name": "BlackheartItemInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackheart_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/BlackheartItemInInventoryTickProcedure.java"
+        ]
+      },
+      "path": "~/items/blackHeart"
     }
   ],
   "variable_elements": [],
@@ -272,7 +339,10 @@
       "item.itemsmp.magiccrystal": "Magic Crystal",
       "item.itemsmp.lucky_pick": "Lucky Pick",
       "item.itemsmp.aether_blade": "Aether Blade",
-      "item.itemsmp.all_knowing_orange": "All Knowing Orange"
+      "item.itemsmp.all_knowing_orange": "All Knowing Orange",
+      "item.itemsmp.blackheart": "Black Heart of God",
+      "advancements.forevercursed.title": "Cursed till the end of time",
+      "advancements.forevercursed.descr": "Watch your actions you are no longer free"
     }
   },
   "metadata": {
@@ -305,8 +375,16 @@
           {
             "name": "allknowingorange",
             "children": []
+          },
+          {
+            "name": "blackHeart",
+            "children": []
           }
         ]
+      },
+      {
+        "name": "commands",
+        "children": []
       }
     ]
   },

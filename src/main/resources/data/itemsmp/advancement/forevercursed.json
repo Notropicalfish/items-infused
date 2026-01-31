@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "itemsmp:blackheart"
+    },
+    "title": {
+      "translate": "advancements.forevercursed.title"
+    },
+    "description": {
+      "translate": "advancements.forevercursed.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "forevercursed_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "itemsmp:blackheart"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "minecraft:adventure/adventuring_time"
+}

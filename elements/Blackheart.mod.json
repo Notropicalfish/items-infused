@@ -3,13 +3,13 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "orange2",
+    "texture": "minecraft:coal",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "All Knowing Orange",
+    "name": "Black Heart of God",
     "rarity": "EPIC",
     "creativeTabs": [
       {
@@ -17,20 +17,20 @@
       }
     ],
     "stackSize": 1,
-    "enchantability": 2,
+    "enchantability": 0,
     "useDuration": 0,
-    "toolType": 2.0,
+    "toolType": 0.0,
     "damageCount": 0,
     "recipeRemainder": {
       "value": ""
     },
-    "destroyAnyBlock": true,
+    "destroyAnyBlock": false,
     "immuneToFire": true,
     "isPiglinCurrency": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "enableMeleeDamage": true,
-    "damageVsEntity": 3.0,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": []
     },
@@ -39,12 +39,6 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 99,
-    "onRightClickedInAir": {
-      "name": "AllKnowingOrangeEntitySwingsItem"
-    },
-    "onRightClickedOnBlock": {
-      "name": "AllKnowingOrangeEntitySwingsItem"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

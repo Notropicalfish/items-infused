@@ -5,7 +5,7 @@
     "toolType": "Pickaxe",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "pick_of_luck",
+    "texture": "luckypick",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "guiTexture": "",

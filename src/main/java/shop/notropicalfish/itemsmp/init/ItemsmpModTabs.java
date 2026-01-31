@@ -22,5 +22,6 @@ public class ItemsmpModTabs {
 				tabData.accept(ItemsmpModItems.LUCKY_PICK.get());
 				tabData.accept(ItemsmpModItems.AETHER_BLADE.get());
 				tabData.accept(ItemsmpModItems.ALL_KNOWING_ORANGE.get());
+				tabData.accept(ItemsmpModItems.BLACKHEART.get());
 			}).build());
 }
