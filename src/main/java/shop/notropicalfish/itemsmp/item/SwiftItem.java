@@ -90,7 +90,7 @@ public abstract class SwiftItem extends ArmorItem {
 			int ticks = Math.min(MAX_TICKS, data.getInt(SPRINT_TICKS_TAG) + 1);
 			data.putInt(SPRINT_TICKS_TAG, ticks);
 			double progress = ticks / (double) MAX_TICKS;
-			double sprintBonus = 0.10D * progress * 4;
+			double sprintBonus = 0.75D * progress;
 			var attr = player.getAttribute(Attributes.MOVEMENT_SPEED);
 			if (attr != null) {
 				attr.removeModifier(SPRINT_SPEED_ID);

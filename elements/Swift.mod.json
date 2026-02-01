@@ -12,7 +12,7 @@
     "textureBoots": "swift_boots",
     "creativeTabs": [
       {
-        "value": "COMBAT"
+        "value": "CUSTOM:ItemSMP"
       }
     ],
     "armorTextureFile": "swift_boots",
