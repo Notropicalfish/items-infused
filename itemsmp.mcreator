@@ -741,6 +741,30 @@
       ],
       "category": "master",
       "subtitle": "Shorkie Squeeks Cutley \u003e///\u003c"
+    },
+    {
+      "name": "shorkiesqueek2",
+      "files": [
+        "shorkiesqueek2"
+      ],
+      "category": "master",
+      "subtitle": "Shorkie Squeeks Cutely \u003e///\u003c"
+    },
+    {
+      "name": "shorkiesqueek3",
+      "files": [
+        "shorkiesqueek3"
+      ],
+      "category": "master",
+      "subtitle": "Shorkie Squeeks Cutely \u003e///\u003c"
+    },
+    {
+      "name": "shorkiesqueek4",
+      "files": [
+        "shorkiesqueek4"
+      ],
+      "category": "master",
+      "subtitle": "Shorkie Squeeks Cutely \u003e///\u003c"
     }
   ],
   "tag_elements": {
@@ -830,7 +854,10 @@
       "item.itemsmp.crystal_heart": "Crystal Heart",
       "translation.itemsmp.heart_kill": "nooticing...",
       "translation.itemsmp.heart_title": "yearning",
-      "subtitles.shorkiesqueek": "Shorkie Squeeks Cutley \u003e///\u003c"
+      "subtitles.shorkiesqueek": "Shorkie Squeeks Cutley \u003e///\u003c",
+      "subtitles.shorkiesqueek2": "Shorkie Squeeks Cutely \u003e///\u003c",
+      "subtitles.shorkiesqueek3": "Shorkie Squeeks Cutely \u003e///\u003c",
+      "subtitles.shorkiesqueek4": "Shorkie Squeeks Cutely \u003e///\u003c"
     }
   },
   "metadata": {
