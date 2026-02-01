@@ -214,5 +214,41 @@
         "stream": false
       }
     ]
+  },
+  "shorkiesqueek": {
+    "subtitle": "subtitles.shorkiesqueek",
+    "sounds": [
+      {
+        "name": "itemsmp:shorkiesqueek",
+        "stream": false
+      }
+    ]
+  },
+  "shorkiesqueek2": {
+    "subtitle": "subtitles.shorkiesqueek2",
+    "sounds": [
+      {
+        "name": "itemsmp:shorkiesqueek2",
+        "stream": false
+      }
+    ]
+  },
+  "shorkiesqueek3": {
+    "subtitle": "subtitles.shorkiesqueek3",
+    "sounds": [
+      {
+        "name": "itemsmp:shorkiesqueek3",
+        "stream": false
+      }
+    ]
+  },
+  "shorkiesqueek4": {
+    "subtitle": "subtitles.shorkiesqueek4",
+    "sounds": [
+      {
+        "name": "itemsmp:shorkiesqueek4",
+        "stream": false
+      }
+    ]
   }
 }

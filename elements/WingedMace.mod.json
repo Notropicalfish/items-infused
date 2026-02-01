@@ -1,0 +1,58 @@
+{
+  "_fv": 79,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Axe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "winged_mace",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "§6Winged Mace",
+    "specialInformation": {
+      "fixedValue": [
+        "§8When Striking an Enemy:",
+        "§7Cancels fall damage and increases leaping charge by §a+1§7.",
+        "§8On Right-Click:",
+        "§7If Leaping is fully charged, launches the user high into the air, to come crashing down on an enemy. ",
+        "§7Enemies struck while leaping are dealt base damage §b+30%§7 of their max hp.",
+        "§7Hits landed while leaping heal the user by §a+25%§7 of their current hp.",
+        "",
+        "§9+30% Bash Damage while Leaping"
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ItemSMP"
+      }
+    ],
+    "efficiency": 6.0,
+    "attackSpeed": 1.2,
+    "enchantability": 4,
+    "damageVsEntity": 5.5,
+    "usageCount": 312,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Magiccrystal"
+      }
+    ],
+    "immuneToFire": false,
+    "blockDropsTier": "STONE",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "WingedMaceRightclicked"
+    },
+    "onEntityHitWith": {
+      "name": "WingedMaceLivingEntityIsHitWithTool"
+    },
+    "onItemInInventoryTick": {
+      "name": "WingedMaceToolInInventoryTick"
+    }
+  }
+}
