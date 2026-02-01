@@ -531,6 +531,262 @@
         ]
       },
       "path": "~/items/Shorkie"
+    },
+    {
+      "name": "WingedMaceRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "winged_mace_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/WingedMaceRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/items/WingedMace"
+    },
+    {
+      "name": "MaceOverlayIconDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mace_overlay_icon_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/MaceOverlayIconDisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/items/WingedMace"
+    },
+    {
+      "name": "MaceOverlayIcon",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mace_overlay_icon",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/client/screens/MaceOverlayIconOverlay.java"
+        ]
+      },
+      "path": "~/items/WingedMace"
+    },
+    {
+      "name": "Cond2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cond_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/Cond2Procedure.java"
+        ]
+      },
+      "path": "~/items/WingedMace"
+    },
+    {
+      "name": "Cond3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cond_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/Cond3Procedure.java"
+        ]
+      },
+      "path": "~/items/WingedMace"
+    },
+    {
+      "name": "WingedMaceToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "winged_mace_tool_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/WingedMaceToolInInventoryTickProcedure.java"
+        ]
+      },
+      "path": "~/items/WingedMace"
+    },
+    {
+      "name": "ZoomOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zoom_overlay_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/ZoomOverlayDisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/items/WingedMace"
+    },
+    {
+      "name": "WingedMace",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "winged_mace",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/item/WingedMaceItem.java",
+          "src/main/resources/assets/itemsmp/models/item/winged_mace.json"
+        ]
+      },
+      "path": "~/items/WingedMace"
+    },
+    {
+      "name": "ZoomOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zoom_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/client/screens/ZoomOverlayOverlay.java"
+        ]
+      },
+      "path": "~/items/WingedMace"
+    },
+    {
+      "name": "Cond0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cond_0",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/Cond0Procedure.java"
+        ]
+      },
+      "path": "~/items/WingedMace"
+    },
+    {
+      "name": "WingedMaceLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "winged_mace_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/WingedMaceLivingEntityIsHitWithToolProcedure.java"
+        ]
+      },
+      "path": "~/items/WingedMace"
+    },
+    {
+      "name": "Cond1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cond_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/Cond1Procedure.java"
+        ]
+      },
+      "path": "~/items/WingedMace"
     }
   ],
   "variable_elements": [
@@ -539,6 +795,12 @@
       "type": "number",
       "scope": "map",
       "value": "0.0"
+    },
+    {
+      "name": "is_leaping",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -807,6 +1069,9 @@
     ],
     "ITEMS:minecraft:foot_armor": [
       "~CUSTOM:Swift.boots"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:WingedMace"
     ]
   },
   "tab_element_order": {},
@@ -957,6 +1222,10 @@
           },
           {
             "name": "Rod of peace",
+            "children": []
+          },
+          {
+            "name": "WingedMace",
             "children": []
           },
           {

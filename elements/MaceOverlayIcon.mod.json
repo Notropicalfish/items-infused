@@ -1,0 +1,77 @@
+{
+  "_fv": 79,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "mace_ui_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Cond0"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 198,
+          "y": 172,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mace_ui_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Cond1"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 198,
+          "y": 172,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mace_ui_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Cond2"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 198,
+          "y": 172,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mace_ui_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Cond3"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 198,
+          "y": 172,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "MaceOverlayIconDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -26,5 +26,6 @@ public class ItemsmpModTabs {
 				tabData.accept(ItemsmpModBlocks.SHORKIE.get().asItem());
 				tabData.accept(ItemsmpModItems.SWIFT_BOOTS.get());
 				tabData.accept(ItemsmpModItems.CRYSTAL_HEART.get());
+				tabData.accept(ItemsmpModItems.WINGED_MACE.get());
 			}).build());
 }
