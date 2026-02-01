@@ -201,8 +201,8 @@
       "registry_name": "aether_blade",
       "metadata": {
         "files": [
-          "src/main/java/shop/notropicalfish/itemsmp/item/AetherBladeItem.java",
-          "src/main/resources/assets/itemsmp/models/item/aether_blade.json"
+          "src/main/resources/assets/itemsmp/models/item/aether_blade.json",
+          "src/main/java/shop/notropicalfish/itemsmp/item/AetherBladeItem.java"
         ]
       },
       "path": "~/items/Aether Blade"
@@ -675,7 +675,7 @@
       "item.itemsmp.lucky_pick": "Lucky Pick",
       "item.itemsmp.aether_blade": "Aether Blade",
       "item.itemsmp.all_knowing_orange": "All Knowing Orange",
-      "item.itemsmp.blackheart": "Black Heart of God",
+      "item.itemsmp.blackheart": "Black Heart of Razarak",
       "advancements.forevercursed.title": "Cursed till the end of time",
       "advancements.forevercursed.descr": "Watch your actions you are no longer free",
       "item.itemsmp.blackhorizern": "Blackhorizern Portal Igniter",
@@ -716,13 +716,13 @@
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModBlocks.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModItems.java",
       "src/main/resources/assets/itemsmp/sounds.json",
-      "src/main/java/shop/notropicalfish/itemsmp/network/ItemsmpModVariables.java",
-      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
       "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModSounds.java",
-      "src/main/resources/pack.mcmeta",
       "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml"
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
+      "src/main/java/shop/notropicalfish/itemsmp/network/ItemsmpModVariables.java",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
@@ -805,6 +805,10 @@
           },
           {
             "name": "Boots of Swiftness",
+            "children": []
+          },
+          {
+            "name": "Crystal Heart",
             "children": []
           }
         ]
