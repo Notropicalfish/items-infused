@@ -201,8 +201,8 @@
       "registry_name": "aether_blade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itemsmp/models/item/aether_blade.json",
-          "src/main/java/shop/notropicalfish/itemsmp/item/AetherBladeItem.java"
+          "src/main/java/shop/notropicalfish/itemsmp/item/AetherBladeItem.java",
+          "src/main/resources/assets/itemsmp/models/item/aether_blade.json"
         ]
       },
       "path": "~/items/Aether Blade"
@@ -393,6 +393,34 @@
         ]
       },
       "path": "~/items/Shorkie"
+    },
+    {
+      "name": "Swift",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "swift",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/item/SwiftItem.java",
+          "src/main/resources/assets/itemsmp/models/item/swift_boots.json"
+        ]
+      },
+      "path": "~/items/Boots of Swiftness"
+    },
+    {
+      "name": "SwiftBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swift_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/recipe/swift_boots_recipe.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/swift_boots_recipe.json"
+        ]
+      },
+      "path": "~/items/Boots of Swiftness"
     }
   ],
   "variable_elements": [
@@ -634,6 +662,9 @@
     ],
     "BIOMES:minecraft:has_structure/ruined_portal_swamp": [
       "~CUSTOM:Punishment"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:Swift.boots"
     ]
   },
   "tab_element_order": {},
@@ -676,7 +707,8 @@
       "subtitles.orangeline22": "Orange makes smart remark",
       "subtitles.orangeline23": "Orange makes smart remark",
       "subtitles.orangeline24": "Orange makes smart remark",
-      "block.itemsmp.shorkie": "Shorkie"
+      "block.itemsmp.shorkie": "Shorkie",
+      "item.itemsmp.swift_boots": "Boots of Swiftness"
     }
   },
   "metadata": {
@@ -684,13 +716,13 @@
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModBlocks.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModItems.java",
       "src/main/resources/assets/itemsmp/sounds.json",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModSounds.java",
-      "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
-      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
       "src/main/java/shop/notropicalfish/itemsmp/network/ItemsmpModVariables.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModSounds.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {
@@ -769,6 +801,10 @@
           },
           {
             "name": "testuibg",
+            "children": []
+          },
+          {
+            "name": "Boots of Swiftness",
             "children": []
           }
         ]
