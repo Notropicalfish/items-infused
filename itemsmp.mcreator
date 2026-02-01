@@ -822,7 +822,7 @@
       "advancements.forevercursed.descr": "Watch your actions you are no longer free",
       "item.itemsmp.blackhorizern": "Blackhorizern Portal Igniter",
       "biome.itemsmp.punishment": "Punishment",
-      "item.itemsmp.all_knowing_orange.description_1": "§7 wait what am I even saying",
+      "item.itemsmp.all_knowing_orange.description_1": "§8 Voiced by Fred French",
       "item.itemsmp.all_knowing_orange.description_2": "§8 SUBSCRIBE TO ORANGE KING ON YOUTUBE!!",
       "item.itemsmp.all_knowing_orange.description_0": "§8 The orange knows all and all knows the orange",
       "subtitles.orangeline1": "Orange maes smart remark",
@@ -854,7 +854,9 @@
       "item.itemsmp.crystal_heart": "Crystal Heart",
       "translation.itemsmp.heart_kill": "nooticing...",
       "translation.itemsmp.heart_title": "yearning",
-      "subtitles.shorkiesqueek": "Shorkie Squeeks Cutley \u003e///\u003c"
+      "subtitles.shorkiesqueek": "Shorkie Squeeks Cutley \u003e///\u003c",
+      "subtitles.shorkiesqueek4": "Shorkie Squeeks Cutely \u003e///\u003c",
+      "subtitles.shorkiesqueek3": "Shorkie Squeeks Cutely \u003e///\u003c"
     }
   },
   "metadata": {

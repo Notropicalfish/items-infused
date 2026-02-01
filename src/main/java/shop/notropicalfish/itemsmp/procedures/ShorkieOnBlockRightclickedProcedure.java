@@ -25,7 +25,8 @@ public class ShorkieOnBlockRightclickedProcedure {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("itemsmp:shorkiesqueek")), SoundSource.MASTER, 1, 1, false);
 				}
 			}
-		} else if (sqeek == 2) {
+		}
+		if (sqeek == 2) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("itemsmp:shorkiesqueek2")), SoundSource.MASTER, 1, 1);
@@ -33,7 +34,8 @@ public class ShorkieOnBlockRightclickedProcedure {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("itemsmp:shorkiesqueek2")), SoundSource.MASTER, 1, 1, false);
 				}
 			}
-		} else if (sqeek == 3) {
+		}
+		if (sqeek == 3) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("itemsmp:shorkiesqueek3")), SoundSource.MASTER, 1, 1);
@@ -41,7 +43,8 @@ public class ShorkieOnBlockRightclickedProcedure {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("itemsmp:shorkiesqueek3")), SoundSource.MASTER, 1, 1, false);
 				}
 			}
-		} else if (sqeek == 4) {
+		}
+		if (sqeek == 4) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("itemsmp:shorkiesqueek4")), SoundSource.MASTER, 1, 1);

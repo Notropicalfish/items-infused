@@ -56,7 +56,6 @@ public class AllKnowingOrangeItem extends Item {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.translatable("item.itemsmp.all_knowing_orange.description_0"));
 		list.add(Component.translatable("item.itemsmp.all_knowing_orange.description_1"));
-		list.add(Component.translatable("item.itemsmp.all_knowing_orange.description_2"));
 	}
 
 	@Override
