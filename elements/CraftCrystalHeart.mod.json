@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "magic",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:Magiccrystal"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Magiccrystal"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Magiccrystal"
+      },
+      {
+        "value": "CUSTOM:Magiccrystal"
+      },
+      {
+        "value": "CUSTOM:Magiccrystal"
+      },
+      {
+        "value": "CUSTOM:Magiccrystal"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Magiccrystal"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CrystalHeart"
+    },
+    "name": "craft_crystal_heart",
+    "namespace": "mod"
+  }
+}

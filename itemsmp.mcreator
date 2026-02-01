@@ -421,6 +421,48 @@
         ]
       },
       "path": "~/items/Boots of Swiftness"
+    },
+    {
+      "name": "CrystalHeart",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_heart",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itemsmp/models/item/crystal_heart.json",
+          "src/main/java/shop/notropicalfish/itemsmp/item/CrystalHeartItem.java"
+        ]
+      },
+      "path": "~/items/Crystal Heart"
+    },
+    {
+      "name": "CraftCrystalHeart",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_crystal_heart",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/recipe/craft_crystal_heart.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/craft_crystal_heart.json"
+        ]
+      },
+      "path": "~/items/Crystal Heart"
+    },
+    {
+      "name": "CraftBlackHeart",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_black_heart",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/recipe/craft_black_heart.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/craft_black_heart.json"
+        ]
+      },
+      "path": "~/items/Black Heart"
     }
   ],
   "variable_elements": [
@@ -708,7 +750,8 @@
       "subtitles.orangeline23": "Orange makes smart remark",
       "subtitles.orangeline24": "Orange makes smart remark",
       "block.itemsmp.shorkie": "Shorkie",
-      "item.itemsmp.swift_boots": "Boots of Swiftness"
+      "item.itemsmp.swift_boots": "Boots of Swiftness",
+      "item.itemsmp.crystal_heart": "Crystal Heart"
     }
   },
   "metadata": {
@@ -716,13 +759,13 @@
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModBlocks.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModItems.java",
       "src/main/resources/assets/itemsmp/sounds.json",
-      "src/main/java/shop/notropicalfish/itemsmp/network/ItemsmpModVariables.java",
-      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
       "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModSounds.java",
-      "src/main/resources/pack.mcmeta",
       "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml"
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
+      "src/main/java/shop/notropicalfish/itemsmp/network/ItemsmpModVariables.java",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
