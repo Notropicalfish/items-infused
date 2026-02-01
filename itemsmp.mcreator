@@ -463,6 +463,29 @@
         ]
       },
       "path": "~/items/Black Heart"
+    },
+    {
+      "name": "CrystalHeartKill",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "crystal_heart_kill",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/CrystalHeartKillProcedure.java"
+        ]
+      },
+      "path": "~/items/Crystal Heart"
     }
   ],
   "variable_elements": [
@@ -751,7 +774,9 @@
       "subtitles.orangeline24": "Orange makes smart remark",
       "block.itemsmp.shorkie": "Shorkie",
       "item.itemsmp.swift_boots": "Boots of Swiftness",
-      "item.itemsmp.crystal_heart": "Crystal Heart"
+      "item.itemsmp.crystal_heart": "Crystal Heart",
+      "translation.itemsmp.heart_kill": "nooticing...",
+      "translation.itemsmp.heart_title": "yearning"
     }
   },
   "metadata": {
