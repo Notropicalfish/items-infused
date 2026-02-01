@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bbc",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:water_bucket"
+    },
+    "b": {
+      "tag": "minecraft:wool"
+    },
+    "c": {
+      "tag": "minecraft:wool_carpets"
+    },
+    "d": {
+      "item": "itemsmp:magiccrystal"
+    }
+  },
+  "result": {
+    "id": "itemsmp:shorkie",
+    "count": 1
+  }
+}
