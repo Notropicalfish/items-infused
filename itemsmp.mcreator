@@ -490,7 +490,7 @@
     {
       "name": "ShorkieOnBlockRightclicked",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "shorkie_on_block_rightclicked",
       "metadata": {
