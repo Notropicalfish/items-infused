@@ -9,7 +9,7 @@
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "guiTexture": "",
-    "name": "§6Winged Mace",
+    "name": "§6§nWinged Mace",
     "specialInformation": {
       "fixedValue": [
         "§8When Striking an Enemy:",
@@ -33,7 +33,7 @@
     "damageVsEntity": 5.5,
     "usageCount": 312,
     "glowCondition": {
-      "fixedValue": false
+      "fixedValue": true
     },
     "repairItems": [
       {
