@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "itemsmp:item/depleted_crystal_heart"
+    "layer0": "itemsmp:item/crystal_heart"
   }
 }

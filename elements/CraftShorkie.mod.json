@@ -7,47 +7,47 @@
     "group": "",
     "unlockingItems": [
       {
-        "value": "Items.DYE#4"
+        "value": "CUSTOM:Magiccrystal"
       }
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "craftingBookCategory": "EQUIPMENT",
+    "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.FEATHER"
+        "value": ""
+      },
+      {
+        "value": "Items.WATER_BUCKET"
       },
       {
         "value": ""
       },
       {
-        "value": "Items.FEATHER"
+        "value": "Blocks.WOOL"
       },
       {
-        "value": "Items.DYE#4"
+        "value": "Blocks.WOOL"
+      },
+      {
+        "value": "Blocks.CARPET"
+      },
+      {
+        "value": ""
       },
       {
         "value": "CUSTOM:Magiccrystal"
       },
       {
-        "value": "Items.DYE#4"
-      },
-      {
-        "value": "Items.DYE#4"
-      },
-      {
-        "value": "Items.GOLDEN_BOOTS"
-      },
-      {
-        "value": "Items.DYE#4"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Swift.boots"
+      "value": "CUSTOM:Shorkie"
     },
-    "name": "swift_boots_recipe",
+    "name": "craft_shorkie",
     "namespace": "mod"
   }
 }

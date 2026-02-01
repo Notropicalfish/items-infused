@@ -45,7 +45,7 @@
     },
     "hardness": 0.0,
     "resistance": 0.0,
-    "hasGravity": true,
+    "hasGravity": false,
     "isWaterloggable": false,
     "hasBlockItem": true,
     "maxStackSize": 1,
@@ -95,24 +95,24 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "DESTROY",
     "isNotColidable": false,
-    "isCustomSoundType": false,
+    "isCustomSoundType": true,
     "soundOnStep": {
       "value": "CLOTH"
     },
     "breakSound": {
-      "value": ""
+      "value": "block.cloth.break"
     },
     "fallSound": {
-      "value": ""
+      "value": "block.cloth.fall"
     },
     "hitSound": {
-      "value": ""
+      "value": "block.cloth.hit"
     },
     "placeSound": {
-      "value": ""
+      "value": "CUSTOM:shorkiesqueek"
     },
     "stepSound": {
-      "value": ""
+      "value": "block.cloth.step"
     },
     "luminance": 0,
     "unbreakable": false,
@@ -139,6 +139,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "ShorkieOnBlockRightclicked"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

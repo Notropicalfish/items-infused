@@ -421,6 +421,116 @@
         ]
       },
       "path": "~/items/Boots of Swiftness"
+    },
+    {
+      "name": "CrystalHeart",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_heart",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itemsmp/models/item/crystal_heart.json",
+          "src/main/java/shop/notropicalfish/itemsmp/item/CrystalHeartItem.java"
+        ]
+      },
+      "path": "~/items/Crystal Heart"
+    },
+    {
+      "name": "CraftCrystalHeart",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_crystal_heart",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/recipe/craft_crystal_heart.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/craft_crystal_heart.json"
+        ]
+      },
+      "path": "~/items/Crystal Heart"
+    },
+    {
+      "name": "CraftBlackHeart",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_black_heart",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/recipe/craft_black_heart.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/craft_black_heart.json"
+        ]
+      },
+      "path": "~/items/Black Heart"
+    },
+    {
+      "name": "CrystalHeartKill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystal_heart_kill",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/CrystalHeartKillProcedure.java"
+        ]
+      },
+      "path": "~/items/Crystal Heart"
+    },
+    {
+      "name": "ShorkieOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shorkie_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/ShorkieOnBlockRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/items/Shorkie"
+    },
+    {
+      "name": "CraftShorkie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_shorkie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/advancement/recipes/craft_shorkie.json",
+          "src/main/resources/data/itemsmp/recipe/craft_shorkie.json"
+        ]
+      },
+      "path": "~/items/Shorkie"
     }
   ],
   "variable_elements": [
@@ -623,6 +733,38 @@
       ],
       "category": "master",
       "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "shorkiesqueek",
+      "files": [
+        "shorkiesqueek"
+      ],
+      "category": "master",
+      "subtitle": "Shorkie Squeeks Cutley \u003e///\u003c"
+    },
+    {
+      "name": "shorkiesqueek2",
+      "files": [
+        "shorkiesqueek2"
+      ],
+      "category": "master",
+      "subtitle": "Shorkie Squeeks Cutely \u003e///\u003c"
+    },
+    {
+      "name": "shorkiesqueek3",
+      "files": [
+        "shorkiesqueek3"
+      ],
+      "category": "master",
+      "subtitle": "Shorkie Squeeks Cutely \u003e///\u003c"
+    },
+    {
+      "name": "shorkiesqueek4",
+      "files": [
+        "shorkiesqueek4"
+      ],
+      "category": "master",
+      "subtitle": "Shorkie Squeeks Cutely \u003e///\u003c"
     }
   ],
   "tag_elements": {
@@ -708,7 +850,14 @@
       "subtitles.orangeline23": "Orange makes smart remark",
       "subtitles.orangeline24": "Orange makes smart remark",
       "block.itemsmp.shorkie": "Shorkie",
-      "item.itemsmp.swift_boots": "Boots of Swiftness"
+      "item.itemsmp.swift_boots": "Boots of Swiftness",
+      "item.itemsmp.crystal_heart": "Crystal Heart",
+      "translation.itemsmp.heart_kill": "nooticing...",
+      "translation.itemsmp.heart_title": "yearning",
+      "subtitles.shorkiesqueek": "Shorkie Squeeks Cutley \u003e///\u003c",
+      "subtitles.shorkiesqueek2": "Shorkie Squeeks Cutely \u003e///\u003c",
+      "subtitles.shorkiesqueek3": "Shorkie Squeeks Cutely \u003e///\u003c",
+      "subtitles.shorkiesqueek4": "Shorkie Squeeks Cutely \u003e///\u003c"
     }
   },
   "metadata": {
@@ -729,6 +878,10 @@
     "name": "~",
     "children": [
       {
+        "name": "commands",
+        "children": []
+      },
+      {
         "name": "items",
         "children": [
           {
@@ -740,11 +893,51 @@
             "children": []
           },
           {
+            "name": "Abyssal Anchor",
+            "children": []
+          },
+          {
+            "name": "Boots of Swiftness",
+            "children": []
+          },
+          {
             "name": "Magic Crystal",
             "children": []
           },
           {
+            "name": "Void Axe",
+            "children": []
+          },
+          {
+            "name": "Magic Throwing Knives",
+            "children": []
+          },
+          {
+            "name": "Crystal Heart",
+            "children": []
+          },
+          {
+            "name": "Electric Dagger",
+            "children": []
+          },
+          {
+            "name": "Tunnle Pick",
+            "children": []
+          },
+          {
+            "name": "Knee High Cloak",
+            "children": []
+          },
+          {
             "name": "All Knowing Orange",
+            "children": []
+          },
+          {
+            "name": "Emerald Katana",
+            "children": []
+          },
+          {
+            "name": "Cultivators Hoe",
             "children": []
           },
           {
@@ -756,39 +949,7 @@
             "children": []
           },
           {
-            "name": "Abyssal Anchor",
-            "children": []
-          },
-          {
-            "name": "Void Axe",
-            "children": []
-          },
-          {
             "name": "Shorkie",
-            "children": []
-          },
-          {
-            "name": "Emerald Katana",
-            "children": []
-          },
-          {
-            "name": "Short Chestplate",
-            "children": []
-          },
-          {
-            "name": "Wooden Clever",
-            "children": []
-          },
-          {
-            "name": "Knee High Cloak",
-            "children": []
-          },
-          {
-            "name": "Tunnle Pick",
-            "children": []
-          },
-          {
-            "name": "Cultivators Hoe",
             "children": []
           },
           {
@@ -796,26 +957,22 @@
             "children": []
           },
           {
-            "name": "Electric Dagger",
+            "name": "Wooden Clever",
             "children": []
           },
           {
-            "name": "Magic Throwing Knives",
+            "name": "Short Chestplate",
             "children": []
           },
           {
-            "name": "Boots of Swiftness",
+            "name": "Wither Blade",
             "children": []
           },
           {
-            "name": "Crystal Heart",
+            "name": "Model Train",
             "children": []
           }
         ]
-      },
-      {
-        "name": "commands",
-        "children": []
       }
     ]
   },

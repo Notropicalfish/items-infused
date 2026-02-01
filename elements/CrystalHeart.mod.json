@@ -3,23 +3,23 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "depleted_crystal_heart",
+    "texture": "crystal_heart",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Black Heart of Razarak",
-    "rarity": "EPIC",
+    "name": "Crystal Heart",
+    "rarity": "COMMON",
     "creativeTabs": [
       {
         "value": "CUSTOM:ItemSMP"
       }
     ],
-    "stackSize": 1,
+    "stackSize": 16,
     "enchantability": 0,
     "useDuration": 0,
-    "toolType": 0.0,
+    "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
       "value": ""

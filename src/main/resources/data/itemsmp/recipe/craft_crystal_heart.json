@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "magic",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "itemsmp:magiccrystal"
+    }
+  },
+  "result": {
+    "id": "itemsmp:crystal_heart",
+    "count": 2
+  }
+}

@@ -3,51 +3,51 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
-    "group": "",
+    "recipeRetstackSize": 2,
+    "group": "magic",
     "unlockingItems": [
       {
-        "value": "Items.DYE#4"
+        "value": "CUSTOM:Magiccrystal"
       }
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "craftingBookCategory": "EQUIPMENT",
+    "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.FEATHER"
+        "value": "CUSTOM:Magiccrystal"
       },
       {
         "value": ""
       },
       {
-        "value": "Items.FEATHER"
-      },
-      {
-        "value": "Items.DYE#4"
+        "value": "CUSTOM:Magiccrystal"
       },
       {
         "value": "CUSTOM:Magiccrystal"
       },
       {
-        "value": "Items.DYE#4"
+        "value": "CUSTOM:Magiccrystal"
       },
       {
-        "value": "Items.DYE#4"
+        "value": "CUSTOM:Magiccrystal"
       },
       {
-        "value": "Items.GOLDEN_BOOTS"
+        "value": ""
       },
       {
-        "value": "Items.DYE#4"
+        "value": "CUSTOM:Magiccrystal"
+      },
+      {
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Swift.boots"
+      "value": "CUSTOM:CrystalHeart"
     },
-    "name": "swift_boots_recipe",
+    "name": "craft_crystal_heart",
     "namespace": "mod"
   }
 }
