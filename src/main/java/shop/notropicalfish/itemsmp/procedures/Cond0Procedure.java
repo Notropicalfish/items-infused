@@ -1,10 +1,6 @@
 package shop.notropicalfish.itemsmp.procedures;
 
-import net.minecraft.world.item.component.CustomData;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.core.component.DataComponents;
+import net.neoforged.bus.api.Event;
 
 public class Cond0Procedure {
 	public static boolean execute(Entity entity) {
