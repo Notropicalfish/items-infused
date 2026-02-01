@@ -214,5 +214,14 @@
         "stream": false
       }
     ]
+  },
+  "shorkiesqueek": {
+    "subtitle": "subtitles.shorkiesqueek",
+    "sounds": [
+      {
+        "name": "itemsmp:shorkiesqueek",
+        "stream": false
+      }
+    ]
   }
 }

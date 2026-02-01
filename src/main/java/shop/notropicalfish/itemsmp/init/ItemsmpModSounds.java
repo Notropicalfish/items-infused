@@ -38,4 +38,5 @@ public class ItemsmpModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> ORANGELINE22 = REGISTRY.register("orangeline22", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itemsmp", "orangeline22")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> ORANGELINE23 = REGISTRY.register("orangeline23", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itemsmp", "orangeline23")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> ORANGELINE24 = REGISTRY.register("orangeline24", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itemsmp", "orangeline24")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> SHORKIESQUEEK = REGISTRY.register("shorkiesqueek", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itemsmp", "shorkiesqueek")));
 }

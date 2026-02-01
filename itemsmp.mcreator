@@ -463,6 +463,51 @@
         ]
       },
       "path": "~/items/Black Heart"
+    },
+    {
+      "name": "CraftShorkie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_shorkie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/recipe/craft_shorkie.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/craft_shorkie.json"
+        ]
+      },
+      "path": "~/items/Shorkie"
+    },
+    {
+      "name": "ShorkieOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shorkie_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/ShorkieOnBlockRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/items/Shorkie"
     }
   ],
   "variable_elements": [
@@ -665,6 +710,14 @@
       ],
       "category": "master",
       "subtitle": "Orange makes smart remark"
+    },
+    {
+      "name": "shorkiesqueek",
+      "files": [
+        "shorkiesqueek"
+      ],
+      "category": "master",
+      "subtitle": "Shorkie Squeeks Cutley \u003e///\u003c"
     }
   ],
   "tag_elements": {
@@ -751,7 +804,8 @@
       "subtitles.orangeline24": "Orange makes smart remark",
       "block.itemsmp.shorkie": "Shorkie",
       "item.itemsmp.swift_boots": "Boots of Swiftness",
-      "item.itemsmp.crystal_heart": "Crystal Heart"
+      "item.itemsmp.crystal_heart": "Crystal Heart",
+      "subtitles.shorkiesqueek": "Shorkie Squeeks Cutley \u003e///\u003c"
     }
   },
   "metadata": {
