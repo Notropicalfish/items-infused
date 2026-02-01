@@ -467,7 +467,7 @@
     {
       "name": "CrystalHeartKill",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "crystal_heart_kill",
       "metadata": {
