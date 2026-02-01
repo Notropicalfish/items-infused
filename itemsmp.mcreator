@@ -526,8 +526,8 @@
       "registry_name": "craft_shorkie",
       "metadata": {
         "files": [
-          "src/main/resources/data/itemsmp/recipe/craft_shorkie.json",
-          "src/main/resources/data/itemsmp/advancement/recipes/craft_shorkie.json"
+          "src/main/resources/data/itemsmp/advancement/recipes/craft_shorkie.json",
+          "src/main/resources/data/itemsmp/recipe/craft_shorkie.json"
         ]
       },
       "path": "~/items/Shorkie"
@@ -792,6 +792,33 @@
         ]
       },
       "path": "~/items/WingedMace"
+    },
+    {
+      "name": "Testidea",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testidea",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/TestideaProcedure.java"
+        ]
+      },
+      "path": "~/items/OriginalMaceNerf"
     }
   ],
   "variable_elements": [
@@ -1042,8 +1069,8 @@
       "~CUSTOM:AetherBlade"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.CONCRETE#15",
-      "~Blocks.CONCRETE_POWDER#15"
+      "~Blocks.CONCRETE_POWDER#15",
+      "~Blocks.CONCRETE#15"
     ],
     "BIOMES:minecraft:has_structure/igloo": [
       "~CUSTOM:Punishment"
@@ -1072,7 +1099,9 @@
     "BIOMES:minecraft:has_structure/ruined_portal_swamp": [
       "~CUSTOM:Punishment"
     ],
-    "ITEMS:minecraft:foot_armor": [],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:Swift.boots"
+    ],
     "ITEMS:minecraft:axes": [
       "~CUSTOM:WingedMace"
     ]
@@ -1202,6 +1231,10 @@
           },
           {
             "name": "Knee High Cloak",
+            "children": []
+          },
+          {
+            "name": "OriginalMaceNerf",
             "children": []
           },
           {
