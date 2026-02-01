@@ -1,27 +1,5 @@
 package shop.notropicalfish.itemsmp.item;
 
-import shop.notropicalfish.itemsmp.procedures.AllKnowingOrangeEntitySwingsItemProcedure;
-
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
-
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.component.ItemAttributeModifiers;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.EquipmentSlotGroup;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.network.chat.Component;
-
-import java.util.List;
-
 public class AllKnowingOrangeItem extends Item {
 	public AllKnowingOrangeItem() {
 		super(new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.EPIC)
@@ -56,7 +34,6 @@ public class AllKnowingOrangeItem extends Item {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.translatable("item.itemsmp.all_knowing_orange.description_0"));
 		list.add(Component.translatable("item.itemsmp.all_knowing_orange.description_1"));
-		list.add(Component.translatable("item.itemsmp.all_knowing_orange.description_2"));
 	}
 
 	@Override

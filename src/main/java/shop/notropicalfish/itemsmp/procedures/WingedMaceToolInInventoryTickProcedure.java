@@ -1,8 +1,6 @@
 package shop.notropicalfish.itemsmp.procedures;
 
-import shop.notropicalfish.itemsmp.network.ItemsmpModVariables;
-
-import net.minecraft.world.entity.Entity;
+import net.neoforged.bus.api.Event;
 
 public class WingedMaceToolInInventoryTickProcedure {
 	public static void execute(Entity entity) {

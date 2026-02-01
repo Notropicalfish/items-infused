@@ -1,10 +1,6 @@
 package shop.notropicalfish.itemsmp.procedures;
 
-import shop.notropicalfish.itemsmp.init.ItemsmpModItems;
-
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
+import net.neoforged.bus.api.Event;
 
 public class MaceOverlayIconDisplayOverlayIngameProcedure {
 	public static boolean execute(Entity entity) {
