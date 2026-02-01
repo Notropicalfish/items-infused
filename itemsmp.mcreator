@@ -936,6 +936,10 @@
           {
             "name": "Short Chestplate",
             "children": []
+          },
+          {
+            "name": "Wither Blade",
+            "children": []
           }
         ]
       }
