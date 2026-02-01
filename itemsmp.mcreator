@@ -465,18 +465,27 @@
       "path": "~/items/Black Heart"
     },
     {
-      "name": "CraftShorkie",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "craft_shorkie",
+      "name": "CrystalHeartKill",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "crystal_heart_kill",
       "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
         "files": [
-          "src/main/resources/data/itemsmp/recipe/craft_shorkie.json",
-          "src/main/resources/data/itemsmp/advancement/recipes/craft_shorkie.json"
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/CrystalHeartKillProcedure.java"
         ]
       },
-      "path": "~/items/Shorkie"
+      "path": "~/items/Crystal Heart"
     },
     {
       "name": "ShorkieOnBlockRightclicked",
@@ -505,6 +514,20 @@
         ],
         "files": [
           "src/main/java/shop/notropicalfish/itemsmp/procedures/ShorkieOnBlockRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/items/Shorkie"
+    },
+    {
+      "name": "CraftShorkie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_shorkie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/advancement/recipes/craft_shorkie.json",
+          "src/main/resources/data/itemsmp/recipe/craft_shorkie.json"
         ]
       },
       "path": "~/items/Shorkie"
@@ -805,6 +828,8 @@
       "block.itemsmp.shorkie": "Shorkie",
       "item.itemsmp.swift_boots": "Boots of Swiftness",
       "item.itemsmp.crystal_heart": "Crystal Heart",
+      "translation.itemsmp.heart_kill": "nooticing...",
+      "translation.itemsmp.heart_title": "yearning",
       "subtitles.shorkiesqueek": "Shorkie Squeeks Cutley \u003e///\u003c"
     }
   },
@@ -813,18 +838,22 @@
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModBlocks.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModItems.java",
       "src/main/resources/assets/itemsmp/sounds.json",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModSounds.java",
-      "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
-      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
       "src/main/java/shop/notropicalfish/itemsmp/network/ItemsmpModVariables.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModSounds.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {
     "name": "~",
     "children": [
+      {
+        "name": "commands",
+        "children": []
+      },
       {
         "name": "items",
         "children": [
@@ -837,11 +866,51 @@
             "children": []
           },
           {
+            "name": "Abyssal Anchor",
+            "children": []
+          },
+          {
+            "name": "Boots of Swiftness",
+            "children": []
+          },
+          {
             "name": "Magic Crystal",
             "children": []
           },
           {
+            "name": "Void Axe",
+            "children": []
+          },
+          {
+            "name": "Magic Throwing Knives",
+            "children": []
+          },
+          {
+            "name": "Crystal Heart",
+            "children": []
+          },
+          {
+            "name": "Electric Dagger",
+            "children": []
+          },
+          {
+            "name": "Tunnle Pick",
+            "children": []
+          },
+          {
+            "name": "Knee High Cloak",
+            "children": []
+          },
+          {
             "name": "All Knowing Orange",
+            "children": []
+          },
+          {
+            "name": "Emerald Katana",
+            "children": []
+          },
+          {
+            "name": "Cultivators Hoe",
             "children": []
           },
           {
@@ -853,39 +922,7 @@
             "children": []
           },
           {
-            "name": "Abyssal Anchor",
-            "children": []
-          },
-          {
-            "name": "Void Axe",
-            "children": []
-          },
-          {
             "name": "Shorkie",
-            "children": []
-          },
-          {
-            "name": "Emerald Katana",
-            "children": []
-          },
-          {
-            "name": "Short Chestplate",
-            "children": []
-          },
-          {
-            "name": "Wooden Clever",
-            "children": []
-          },
-          {
-            "name": "Knee High Cloak",
-            "children": []
-          },
-          {
-            "name": "Tunnle Pick",
-            "children": []
-          },
-          {
-            "name": "Cultivators Hoe",
             "children": []
           },
           {
@@ -893,26 +930,14 @@
             "children": []
           },
           {
-            "name": "Electric Dagger",
+            "name": "Wooden Clever",
             "children": []
           },
           {
-            "name": "Magic Throwing Knives",
-            "children": []
-          },
-          {
-            "name": "Boots of Swiftness",
-            "children": []
-          },
-          {
-            "name": "Crystal Heart",
+            "name": "Short Chestplate",
             "children": []
           }
         ]
-      },
-      {
-        "name": "commands",
-        "children": []
       }
     ]
   },
