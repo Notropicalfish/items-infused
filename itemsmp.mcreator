@@ -831,6 +831,70 @@
         "files": []
       },
       "path": "~/commands"
+    },
+    {
+      "name": "Kunai",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kunai",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itemsmp/models/item/kunai.json",
+          "src/main/java/shop/notropicalfish/itemsmp/item/KunaiItem.java"
+        ]
+      },
+      "path": "~/items/Magic Throwing Knives"
+    },
+    {
+      "name": "ThrowingKnife",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "throwing_knife",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/entity/ThrowingKnifeEntity.java"
+        ]
+      },
+      "path": "~/items/Magic Throwing Knives"
+    },
+    {
+      "name": "KunaiRangedItemShootsProjectile",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "kunai_ranged_item_shoots_projectile",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/KunaiRangedItemShootsProjectileProcedure.java"
+        ]
+      },
+      "path": "~/items/Magic Throwing Knives"
+    },
+    {
+      "name": "KunaiRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kunai_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/recipe/kunai_recipe.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/kunai_recipe.json"
+        ]
+      },
+      "path": "~/items/Magic Throwing Knives"
     }
   ],
   "variable_elements": [
@@ -1174,7 +1238,8 @@
       "item.itemsmp.winged_mace.description_0": "§8When Striking an Enemy:",
       "item.itemsmp.winged_mace.description_1": "§7Cancels fall damage and increases leaping charge by §a+1§7.",
       "gamerule.boundItems.description": "Special items can only be used by specific player(s).",
-      "gamerule.boundItems": "Bound Items"
+      "gamerule.boundItems": "Bound Items",
+      "item.itemsmp.kunai": "Kunai"
     }
   },
   "metadata": {
@@ -1182,6 +1247,8 @@
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModGameRules.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModBlocks.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModItems.java",
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModEntities.java",
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModEntityRenderers.java",
       "src/main/resources/assets/itemsmp/sounds.json",
       "src/main/java/shop/notropicalfish/itemsmp/network/ItemsmpModVariables.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",

@@ -27,5 +27,6 @@ public class ItemsmpModTabs {
 				tabData.accept(ItemsmpModItems.SWIFT_BOOTS.get());
 				tabData.accept(ItemsmpModItems.CRYSTAL_HEART.get());
 				tabData.accept(ItemsmpModItems.WINGED_MACE.get());
+				tabData.accept(ItemsmpModItems.KUNAI.get());
 			}).build());
 }

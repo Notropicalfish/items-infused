@@ -52,5 +52,6 @@
   "item.itemsmp.winged_mace.description_0": "§8When Striking an Enemy:",
   "item.itemsmp.winged_mace.description_1": "§7Cancels fall damage and increases leaping charge by §a+1§7.",
   "gamerule.boundItems.description": "Special items can only be used by specific player(s).",
-  "gamerule.boundItems": "Bound Items"
+  "gamerule.boundItems": "Bound Items",
+  "item.itemsmp.kunai": "Kunai"
 }

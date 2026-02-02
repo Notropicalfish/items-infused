@@ -4,6 +4,7 @@ import shop.notropicalfish.itemsmp.network.ItemsmpModVariables;
 import shop.notropicalfish.itemsmp.init.ItemsmpModTabs;
 import shop.notropicalfish.itemsmp.init.ItemsmpModSounds;
 import shop.notropicalfish.itemsmp.init.ItemsmpModItems;
+import shop.notropicalfish.itemsmp.init.ItemsmpModEntities;
 import shop.notropicalfish.itemsmp.init.ItemsmpModBlocks;
 
 import org.apache.logging.log4j.Logger;
@@ -44,6 +45,7 @@ public class ItemsmpMod {
 		ItemsmpModSounds.REGISTRY.register(modEventBus);
 		ItemsmpModBlocks.REGISTRY.register(modEventBus);
 		ItemsmpModItems.REGISTRY.register(modEventBus);
+		ItemsmpModEntities.REGISTRY.register(modEventBus);
 		ItemsmpModTabs.REGISTRY.register(modEventBus);
 		ItemsmpModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		// Start of user code block mod init

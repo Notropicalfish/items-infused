@@ -1,0 +1,22 @@
+{
+  "_fv": 79,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Kunai"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.egg.throw"
+    },
+    "igniteFire": false,
+    "disableGravity": false,
+    "power": 0.5,
+    "damage": 4.0,
+    "knockback": 0,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "modelWidth": 0.5,
+    "modelHeight": 0.5
+  }
+}
