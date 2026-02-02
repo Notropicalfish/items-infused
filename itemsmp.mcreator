@@ -238,7 +238,7 @@
     {
       "name": "Setplayeritemuuid",
       "type": "command",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "setplayeritemuuid",
       "metadata": {

@@ -63,13 +63,15 @@ public class SetplayeritemuuidCommand {
 		if (protectedItem == null)
 			return;
 		CompoundTag data = player.getPersistentData();
+		data.remove("ProtectedStacks");
 		int index = 0;
 		Iterator<ItemEntity> iterator = event.getDrops().iterator();
 		while (iterator.hasNext()) {
 			ItemEntity drop = iterator.next();
 			ItemStack stack = drop.getItem();
 			if (stack.getItem() == protectedItem) {
-				CompoundTag stackTag = stack.saveOptional(player.level().registryAccess());
+				CompoundTag stackTag = new CompoundTag();
+				stack.save(player.server.registryAccess(), stackTag);
 				data.put("ProtectedStack_" + index, stackTag);
 				index++;
 				iterator.remove();
@@ -92,7 +94,8 @@ public class SetplayeritemuuidCommand {
 		int count = originalData.getInt("ProtectedStackCount");
 		for (int i = 0; i < count; i++) {
 			CompoundTag stackTag = originalData.getCompound("ProtectedStack_" + i);
-			ItemStack stack = ItemStack.parse(clone.level().registryAccess(), stackTag).orElse(ItemStack.EMPTY);
+			ItemStack stack = ItemStack.parseOptional(clone.server.registryAccess(), stackTag);
+			// Only add if the stack is not empty (safety check)
 			if (!stack.isEmpty()) {
 				clone.getInventory().add(stack);
 			}
