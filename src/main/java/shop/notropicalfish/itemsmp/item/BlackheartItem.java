@@ -7,6 +7,9 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import com.google.common.eventbus.Subscribe;
+import net.neoforged.bus.api.SubscribeEvent;
+import it.unimi.dsi.fastutil.Stack;
 
 public class BlackheartItem extends Item {
 	public BlackheartItem() {

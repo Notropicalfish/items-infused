@@ -358,7 +358,7 @@
           "src/main/java/shop/notropicalfish/itemsmp/block/BlackhorizernPortalBlock.java"
         ]
       },
-      "path": "~/items/Black Heart"
+      "path": "~/items/Black Heart/Blackhorizen"
     },
     {
       "name": "Punishment",
@@ -375,7 +375,7 @@
           "src/main/resources/data/itemsmp/worldgen/biome/punishment.json"
         ]
       },
-      "path": "~/items/Black Heart"
+      "path": "~/items/Black Heart/Blackhorizen"
     },
     {
       "name": "Shorkie",
@@ -1540,7 +1540,12 @@
           },
           {
             "name": "Black Heart",
-            "children": []
+            "children": [
+              {
+                "name": "Blackhorizen",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Great Hammer",
