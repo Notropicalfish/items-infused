@@ -53,5 +53,7 @@
   "item.itemsmp.winged_mace.description_1": "§7Cancels fall damage and increases leaping charge by §a+1§7.",
   "gamerule.boundItems.description": "Special items can only be used by specific player(s).",
   "gamerule.boundItems": "Bound Items",
-  "item.itemsmp.kunai": "Kunai"
+  "item.itemsmp.kunai": "Kunai",
+  "item.itemsmp.wither_blade": "Withering Blade",
+  "item.itemsmp.emerald_katana": "Emerald Katana"
 }

@@ -7,12 +7,17 @@ import shop.notropicalfish.itemsmp.ItemsmpMod;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
+@EventBusSubscriber
 public class ItemsmpModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ItemsmpMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ITEM_SMP = REGISTRY.register("item_smp",
@@ -28,5 +33,13 @@ public class ItemsmpModTabs {
 				tabData.accept(ItemsmpModItems.CRYSTAL_HEART.get());
 				tabData.accept(ItemsmpModItems.WINGED_MACE.get());
 				tabData.accept(ItemsmpModItems.KUNAI.get());
+				tabData.accept(ItemsmpModItems.WITHER_BLADE.get());
 			}).build());
+
+	@SubscribeEvent
+	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
+		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(ItemsmpModItems.EMERALD_KATANA.get());
+		}
+	}
 }

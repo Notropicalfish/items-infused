@@ -895,6 +895,101 @@
         ]
       },
       "path": "~/items/Magic Throwing Knives"
+    },
+    {
+      "name": "WitherBladeLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "wither_blade_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/WitherBladeLivingEntityIsHitWithToolProcedure.java"
+        ]
+      },
+      "path": "~/items/Wither Blade"
+    },
+    {
+      "name": "WitherBlade",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wither_blade",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/item/WitherBladeItem.java",
+          "src/main/resources/assets/itemsmp/models/item/wither_blade.json"
+        ]
+      },
+      "path": "~/items/Wither Blade"
+    },
+    {
+      "name": "EmeraldKatana",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "emerald_katana",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/item/EmeraldKatanaItem.java",
+          "src/main/resources/assets/itemsmp/models/item/emerald_katana.json"
+        ]
+      },
+      "path": "~/items/Emerald Katana"
+    },
+    {
+      "name": "EmeraldKatanaRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_katana_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/recipe/emerald_katana_recipe.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/emerald_katana_recipe.json"
+        ]
+      },
+      "path": "~/items/Emerald Katana"
+    },
+    {
+      "name": "WitherBladeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wither_blade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/recipe/wither_blade_recipe.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/wither_blade_recipe.json"
+        ]
+      },
+      "path": "~/items/Wither Blade"
     }
   ],
   "variable_elements": [
@@ -1142,6 +1237,8 @@
       "~CUSTOM:LuckyPick"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:EmeraldKatana",
+      "~CUSTOM:WitherBlade",
       "~CUSTOM:AetherBlade"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
@@ -1239,7 +1336,9 @@
       "item.itemsmp.winged_mace.description_1": "§7Cancels fall damage and increases leaping charge by §a+1§7.",
       "gamerule.boundItems.description": "Special items can only be used by specific player(s).",
       "gamerule.boundItems": "Bound Items",
-      "item.itemsmp.kunai": "Kunai"
+      "item.itemsmp.kunai": "Kunai",
+      "item.itemsmp.wither_blade": "Withering Blade",
+      "item.itemsmp.emerald_katana": "Emerald Katana"
     }
   },
   "metadata": {
