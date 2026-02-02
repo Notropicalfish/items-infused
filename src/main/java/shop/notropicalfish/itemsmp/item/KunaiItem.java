@@ -3,6 +3,9 @@ package shop.notropicalfish.itemsmp.item;
 import shop.notropicalfish.itemsmp.procedures.KunaiRangedItemShootsProjectileProcedure;
 import shop.notropicalfish.itemsmp.entity.ThrowingKnifeEntity;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.ProjectileWeaponItem;
@@ -29,6 +32,12 @@ public class KunaiItem extends Item {
 	@Override
 	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
 		return 72000;
+	}
+
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public boolean isFoil(ItemStack itemstack) {
+		return true;
 	}
 
 	@Override

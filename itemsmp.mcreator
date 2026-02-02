@@ -312,7 +312,7 @@
           "src/main/resources/data/itemsmp/advancement/forevercursed.json"
         ]
       },
-      "path": "~/items/Black Heart"
+      "path": "~/Advancements"
     },
     {
       "name": "BlackheartItemInInventoryTick",
@@ -844,7 +844,7 @@
           "src/main/java/shop/notropicalfish/itemsmp/item/KunaiItem.java"
         ]
       },
-      "path": "~/items/Magic Throwing Knives"
+      "path": "~/items/Kunai"
     },
     {
       "name": "ThrowingKnife",
@@ -857,7 +857,7 @@
           "src/main/java/shop/notropicalfish/itemsmp/entity/ThrowingKnifeEntity.java"
         ]
       },
-      "path": "~/items/Magic Throwing Knives"
+      "path": "~/items/Kunai"
     },
     {
       "name": "KunaiRangedItemShootsProjectile",
@@ -880,7 +880,7 @@
           "src/main/java/shop/notropicalfish/itemsmp/procedures/KunaiRangedItemShootsProjectileProcedure.java"
         ]
       },
-      "path": "~/items/Magic Throwing Knives"
+      "path": "~/items/Kunai"
     },
     {
       "name": "KunaiRecipe",
@@ -894,7 +894,7 @@
           "src/main/resources/data/itemsmp/advancement/recipes/kunai_recipe.json"
         ]
       },
-      "path": "~/items/Magic Throwing Knives"
+      "path": "~/items/Kunai"
     },
     {
       "name": "WitherBladeLivingEntityIsHitWithTool",
@@ -1018,6 +1018,71 @@
         ]
       },
       "path": "~/items/Void Axe"
+    },
+    {
+      "name": "Deforestationagent",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deforestationagent",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/advancement/deforestationagent.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "MagicalBeginings",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magical_beginings",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/advancement/magical_beginings.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Ohgreatepower",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ohgreatepower",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/advancement/ohgreatepower.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Selftaughtninja",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "selftaughtninja",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/advancement/selftaughtninja.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Villagesamuri",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "villagesamuri",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/advancement/villagesamuri.json"
+        ]
+      },
+      "path": "~/Advancements"
     }
   ],
   "variable_elements": [
@@ -1318,8 +1383,8 @@
       "item.itemsmp.aether_blade": "Aether Blade",
       "item.itemsmp.all_knowing_orange": "All Knowing Orange",
       "item.itemsmp.blackheart": "Black Heart of Razarak",
-      "advancements.forevercursed.title": "Cursed till the end of time",
-      "advancements.forevercursed.descr": "Watch your actions you are no longer free",
+      "advancements.forevercursed.title": "Immortal Curse",
+      "advancements.forevercursed.descr": "You are no longer free from judgment",
       "item.itemsmp.blackhorizern": "Blackhorizern Portal Igniter",
       "biome.itemsmp.punishment": "Punishment",
       "item.itemsmp.all_knowing_orange.description_1": "§8 Voiced by Fred French",
@@ -1369,7 +1434,17 @@
       "item.itemsmp.kunai": "Kunai",
       "item.itemsmp.wither_blade": "Withering Blade",
       "item.itemsmp.emerald_katana": "Emerald Katana",
-      "item.itemsmp.void_axe": "Void Axe"
+      "item.itemsmp.void_axe": "Void Axe",
+      "advancements.deforestationagent.descr": "Craft a void axe",
+      "advancements.deforestationagent.title": "Deforestation agent",
+      "advancements.magical_beginings.title": "Magical Beginnings",
+      "advancements.magical_beginings.descr": "Obtain Magic Crystal",
+      "advancements.ohgreatepower.title": "Purefied Crystal",
+      "advancements.ohgreatepower.descr": "Form a Crystal Heart from 6 MagicCrystal",
+      "advancements.selftaughtninja.title": "Self Taught Ninja",
+      "advancements.selftaughtninja.descr": "Craft Kunai",
+      "advancements.villagesamuri.title": "Village Samuri",
+      "advancements.villagesamuri.descr": "Obtain the Emerald Katana"
     }
   },
   "metadata": {
@@ -1424,7 +1499,7 @@
             "children": []
           },
           {
-            "name": "Magic Throwing Knives",
+            "name": "Kunai",
             "children": []
           },
           {
@@ -1496,6 +1571,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Advancements",
+        "children": []
       }
     ]
   },

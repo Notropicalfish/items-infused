@@ -2,6 +2,9 @@ package shop.notropicalfish.itemsmp.item;
 
 import shop.notropicalfish.itemsmp.procedures.WitherBladeLivingEntityIsHitWithToolProcedure;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
@@ -55,5 +58,11 @@ public class WitherBladeItem extends SwordItem {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
 		WitherBladeLivingEntityIsHitWithToolProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 		return retval;
+	}
+
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public boolean isFoil(ItemStack itemstack) {
+		return true;
 	}
 }

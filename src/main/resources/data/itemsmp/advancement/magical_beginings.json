@@ -1,13 +1,14 @@
 {
   "display": {
+    "background": "minecraft:textures/block/stone.png",
     "icon": {
-      "id": "itemsmp:blackheart"
+      "id": "itemsmp:magiccrystal"
     },
     "title": {
-      "translate": "advancements.forevercursed.title"
+      "translate": "advancements.magical_beginings.title"
     },
     "description": {
-      "translate": "advancements.forevercursed.descr"
+      "translate": "advancements.magical_beginings.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,13 +16,13 @@
     "hidden": false
   },
   "criteria": {
-    "forevercursed_0": {
+    "magical_beginings_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "itemsmp:blackheart"
+              "itemsmp:magiccrystal"
             ],
             "count": {
               "min": 1,
@@ -33,7 +34,6 @@
     }
   },
   "rewards": {
-    "experience": 20
-  },
-  "parent": "itemsmp:ohgreatepower"
+    "experience": 50
+  }
 }

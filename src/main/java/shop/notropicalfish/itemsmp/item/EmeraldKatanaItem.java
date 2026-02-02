@@ -92,4 +92,9 @@ public class EmeraldKatanaItem extends SwordItem {
 	public int getUseDuration(ItemStack stack, LivingEntity entity) {
 		return 20;
 	}
+	
+	public boolean isFoil(ItemStack itemstack) {
+		return true;
+	}
+
 }
