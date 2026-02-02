@@ -6,116 +6,76 @@ import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
-import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.nbt.ListTag;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.HolderLookup;
 import net.minecraft.commands.arguments.item.ItemArgument;
 import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.commands.Commands;
 
-import java.util.Map;
-import java.util.List;
 import java.util.Iterator;
-import java.util.HashMap;
-import java.util.ArrayList;
 
 @EventBusSubscriber
 public class SetplayeritemuuidCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(
-				Commands.literal("setplayeritemuuid").requires(src -> src.hasPermission(2)).then(Commands.argument("player", EntityArgument.player()).then(Commands.argument("item", ItemArgument.item(event.getBuildContext())).executes(ctx -> {
-					ServerPlayer player = EntityArgument.getPlayer(ctx, "player");
-					var item = ItemArgument.getItem(ctx, "item").getItem();
-					var worldData = ProtectedItemWorldData.get(player.getLevel());
-					worldData.setProtectedItem(player.getUUID().toString(), item);
-					ctx.getSource().sendSuccess(() -> Component.literal("Protected item [" + new net.minecraft.world.item.ItemStack(item).getHoverName().getString() + "] for player " + player.getName().getString()), true);
+		event.getDispatcher().register(Commands.literal("setplayeritemuuid").requires(source -> source.hasPermission(2))
+				.then(Commands.argument("item", ItemArgument.item(event.getBuildContext())).then(Commands.argument("player", EntityArgument.player()).executes(context -> {
+					Item item = ItemArgument.getItem(context, "item").getItem();
+					ServerPlayer player = EntityArgument.getPlayer(context, "player");
+					ProtectedItemData.setProtectedItem(player, item);
+					context.getSource().sendSuccess(() -> Component.literal("Protected item " + item.getDescriptionId() + " for player " + player.getName().getString()), true);
 					return 1;
 				}))));
 	}
 
-	public static class ProtectedItemWorldData extends SavedData {
-		private final Map<String, ResourceLocation> playerToItem = new HashMap<>();
+	public static class ProtectedItemData {
+		private static final String NBT_KEY = "ProtectedItem";
 
-		public ProtectedItemWorldData() {
+		public static void setProtectedItem(ServerPlayer player, Item item) {
+			CompoundTag persistentData = player.getPersistentData();
+			ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(item);
+			persistentData.putString(NBT_KEY, itemId.toString());
 		}
 
-		public void setProtectedItem(String playerUUID, Item item) {
-			playerToItem.put(playerUUID, BuiltInRegistries.ITEM.getKey(item));
-			setDirty();
-		}
-
-		public Item getProtectedItem(String playerUUID) {
-			ResourceLocation id = playerToItem.get(playerUUID);
-			if (id == null)
+		public static Item getProtectedItem(ServerPlayer player) {
+			CompoundTag persistentData = player.getPersistentData();
+			if (!persistentData.contains(NBT_KEY))
 				return null;
-			return BuiltInRegistries.ITEM.get(id);
-		}
-
-		@Override
-		public CompoundTag save(CompoundTag tag, HolderLookup.Provider context) {
-			ListTag list = new ListTag();
-			for (Map.Entry<String, ResourceLocation> entry : playerToItem.entrySet()) {
-				CompoundTag playerTag = new CompoundTag();
-				playerTag.putString("PlayerUUID", entry.getKey());
-				playerTag.putString("Item", entry.getValue().toString());
-				list.add(playerTag);
-			}
-			tag.put("ProtectedItems", list);
-			return tag;
-		}
-
-		public static ProtectedItemWorldData load(CompoundTag tag, HolderLookup.Provider context) {
-			ProtectedItemWorldData data = new ProtectedItemWorldData();
-			ListTag list = tag.getList("ProtectedItems", 10);
-			for (int i = 0; i < list.size(); i++) {
-				CompoundTag playerTag = list.getCompound(i);
-				String uuid = playerTag.getString("PlayerUUID");
-				ResourceLocation id = ResourceLocation.tryParse(playerTag.getString("Item"));
-				if (id != null)
-					data.playerToItem.put(uuid, id);
-			}
-			return data;
-		}
-
-		public static ProtectedItemWorldData get(net.minecraft.server.level.ServerLevel world) {
-			return world.getDataStorage().computeIfAbsent((tag, context) -> ProtectedItemWorldData.load(tag, context), ProtectedItemWorldData::new, "protected_items_data");
+			String itemIdString = persistentData.getString(NBT_KEY);
+			ResourceLocation itemId = ResourceLocation.tryParse(itemIdString);
+			if (itemId == null)
+				return null;
+			return BuiltInRegistries.ITEM.get(itemId);
 		}
 	}
-
-	// Temporary store removed stacks before player respawn
-	private static final String TEMP_STACKS_KEY = "ProtectedStacksTemp";
 
 	@SubscribeEvent
 	public static void onPlayerDrops(LivingDropsEvent event) {
 		if (!(event.getEntity() instanceof ServerPlayer player))
 			return;
-		var worldData = ProtectedItemWorldData.get(player.getLevel());
-		var protectedItem = worldData.getProtectedItem(player.getUUID().toString());
+		Item protectedItem = ProtectedItemData.getProtectedItem(player);
 		if (protectedItem == null)
 			return;
-		List<ItemStack> stacksToRestore = new ArrayList<>();
-		Iterator<net.minecraft.world.entity.item.ItemEntity> iterator = event.getDrops().iterator();
+		CompoundTag data = player.getPersistentData();
+		int index = 0;
+		Iterator<ItemEntity> iterator = event.getDrops().iterator();
 		while (iterator.hasNext()) {
-			var drop = iterator.next();
+			ItemEntity drop = iterator.next();
 			ItemStack stack = drop.getItem();
 			if (stack.getItem() == protectedItem) {
-				stacksToRestore.add(stack.copy()); // save for later
-				iterator.remove(); // prevent it from dropping
+				CompoundTag stackTag = stack.saveOptional(player.level().registryAccess());
+				data.put("ProtectedStack_" + index, stackTag);
+				index++;
+				iterator.remove();
 			}
 		}
-		if (!stacksToRestore.isEmpty()) {
-			// Save to player NBT temporarily for cloning
-			var nbt = player.getPersistentData();
-			nbt.put(TEMP_STACKS_KEY, net.minecraft.nbt.ListTag.of(stacksToRestore.stream().map(ItemStack::save).toList()));
-		}
+		data.putInt("ProtectedStackCount", index);
 	}
 
 	@SubscribeEvent
@@ -124,16 +84,19 @@ public class SetplayeritemuuidCommand {
 			return;
 		ServerPlayer original = (ServerPlayer) event.getOriginal();
 		ServerPlayer clone = (ServerPlayer) event.getEntity();
-		var originalNBT = original.getPersistentData();
-		if (!originalNBT.contains(TEMP_STACKS_KEY))
-			return;
-		var list = originalNBT.getList(TEMP_STACKS_KEY, 10); // 10 = CompoundTag
-		for (int i = 0; i < list.size(); i++) {
-			ItemStack stack = ItemStack.of(list.getCompound(i));
+		CompoundTag originalData = original.getPersistentData();
+		CompoundTag cloneData = clone.getPersistentData();
+		if (originalData.contains("ProtectedItem")) {
+			cloneData.putString("ProtectedItem", originalData.getString("ProtectedItem"));
+		}
+		int count = originalData.getInt("ProtectedStackCount");
+		for (int i = 0; i < count; i++) {
+			CompoundTag stackTag = originalData.getCompound("ProtectedStack_" + i);
+			ItemStack stack = ItemStack.parse(clone.level().registryAccess(), stackTag).orElse(ItemStack.EMPTY);
 			if (!stack.isEmpty()) {
 				clone.getInventory().add(stack);
 			}
 		}
-		originalNBT.remove(TEMP_STACKS_KEY); // cleanup
+		originalData.remove("ProtectedStackCount");
 	}
 }

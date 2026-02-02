@@ -229,8 +229,8 @@
       "registry_name": "all_knowing_orange",
       "metadata": {
         "files": [
-          "src/main/java/shop/notropicalfish/itemsmp/item/AllKnowingOrangeItem.java",
-          "src/main/resources/assets/itemsmp/models/item/all_knowing_orange.json"
+          "src/main/resources/assets/itemsmp/models/item/all_knowing_orange.json",
+          "src/main/java/shop/notropicalfish/itemsmp/item/AllKnowingOrangeItem.java"
         ]
       },
       "path": "~/items/All Knowing Orange"
@@ -764,7 +764,12 @@
       "locked_code": false,
       "registry_name": "zoom_overlay_display_overlay_ingame",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/shop/notropicalfish/itemsmp/procedures/ZoomOverlayDisplayOverlayIngameProcedure.java"
@@ -1114,7 +1119,7 @@
       "advancements.forevercursed.descr": "Watch your actions you are no longer free",
       "item.itemsmp.blackhorizern": "Blackhorizern Portal Igniter",
       "biome.itemsmp.punishment": "Punishment",
-      "item.itemsmp.all_knowing_orange.description_1": "§7 wait what am I even saying",
+      "item.itemsmp.all_knowing_orange.description_1": "§8 Voiced by Fred French",
       "item.itemsmp.all_knowing_orange.description_2": "§8 SUBSCRIBE TO ORANGE KING ON YOUTUBE!!",
       "item.itemsmp.all_knowing_orange.description_0": "§8 The orange knows all and all knows the orange",
       "subtitles.orangeline1": "Orange maes smart remark",
@@ -1146,7 +1151,16 @@
       "item.itemsmp.crystal_heart": "Crystal Heart",
       "translation.itemsmp.heart_kill": "nooticing...",
       "translation.itemsmp.heart_title": "yearning",
-      "subtitles.shorkiesqueek": "Shorkie Squeeks Cutley \u003e///\u003c"
+      "subtitles.shorkiesqueek": "Shorkie Squeeks Cutley \u003e///\u003c",
+      "item.itemsmp.winged_mace": "§6§nWinged Mace",
+      "item.itemsmp.winged_mace.description_6": "",
+      "item.itemsmp.winged_mace.description_7": "§9+30% Bash Damage while Leaping",
+      "item.itemsmp.winged_mace.description_4": "§7Enemies struck while leaping are dealt base damage §b+30%§7 of their max hp.",
+      "item.itemsmp.winged_mace.description_5": "§7Hits landed while leaping heal the user by §a+25%§7 of their current hp.",
+      "item.itemsmp.winged_mace.description_2": "§8On Right-Click:",
+      "item.itemsmp.winged_mace.description_3": "§7If Leaping is fully charged, launches the user high into the air, to come crashing down on an enemy. ",
+      "item.itemsmp.winged_mace.description_0": "§8When Striking an Enemy:",
+      "item.itemsmp.winged_mace.description_1": "§7Cancels fall damage and increases leaping charge by §a+1§7."
     }
   },
   "metadata": {
@@ -1154,13 +1168,13 @@
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModBlocks.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModItems.java",
       "src/main/resources/assets/itemsmp/sounds.json",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModSounds.java",
-      "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
-      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
       "src/main/java/shop/notropicalfish/itemsmp/network/ItemsmpModVariables.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModSounds.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {
