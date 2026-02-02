@@ -4,13 +4,13 @@
   "definition": {
     "name": "Punishment",
     "groundBlock": {
-      "value": "Blocks.CONCRETE_POWDER#15"
+      "value": "Blocks.OBSIDIAN"
     },
     "undergroundBlock": {
-      "value": "Blocks.CONCRETE#15"
+      "value": "Blocks.OBSIDIAN"
     },
     "underwaterBlock": {
-      "value": "Blocks.CONCRETE#15"
+      "value": "Blocks.OBSIDIAN"
     },
     "airColor": {
       "value": -16777216,
@@ -82,15 +82,15 @@
     "treesPerChunk": 2,
     "vanillaTreeType": "Savanna trees",
     "treeType": 1,
-    "minHeight": 15,
+    "minHeight": 5,
     "treeStem": {
       "value": "Blocks.LOG2#1"
     },
     "treeBranch": {
-      "value": "Blocks.LOG2#1"
+      "value": "Blocks.AIR"
     },
     "treeVines": {
-      "value": "Blocks.CAVE_VINES_PLANT"
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
       "value": ""

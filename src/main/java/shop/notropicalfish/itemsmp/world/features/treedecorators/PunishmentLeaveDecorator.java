@@ -67,10 +67,10 @@ public class PunishmentLeaveDecorator extends LeaveVineDecorator {
 	}
 
 	private static void addVine(BlockPos pos, Direction direction, TreeDecorator.Context context) {
-		context.setBlock(pos, Blocks.CAVE_VINES_PLANT.defaultBlockState());
+		context.setBlock(pos, Blocks.AIR.defaultBlockState());
 		int i = 4;
 		for (BlockPos blockpos = pos.below(); context.isAir(blockpos) && i > 0; --i) {
-			context.setBlock(blockpos, oriented(Blocks.CAVE_VINES_PLANT.defaultBlockState(), direction));
+			context.setBlock(blockpos, oriented(Blocks.AIR.defaultBlockState(), direction));
 			blockpos = blockpos.below();
 		}
 	}
