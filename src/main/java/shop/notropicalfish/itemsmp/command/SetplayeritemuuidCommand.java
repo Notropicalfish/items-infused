@@ -1,5 +1,7 @@
 package shop.notropicalfish.itemsmp.command;
 
+import shop.notropicalfish.itemsmp.init.ItemsmpModGameRules;
+
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDropsEvent;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
@@ -28,6 +30,10 @@ public class SetplayeritemuuidCommand {
 				.then(Commands.argument("item", ItemArgument.item(event.getBuildContext())).then(Commands.argument("player", EntityArgument.player()).executes(context -> {
 					Item item = ItemArgument.getItem(context, "item").getItem();
 					ServerPlayer player = EntityArgument.getPlayer(context, "player");
+					if (!player.level().getGameRules().getBoolean(ItemsmpModGameRules.BOUND_ITEMS)) {
+						context.getSource().sendFailure(Component.literal("The gamerule 'boundItems' is disabled."));
+						return 0;
+					}
 					ProtectedItemData.setProtectedItem(player, item);
 					context.getSource().sendSuccess(() -> Component.literal("Protected item " + item.getDescriptionId() + " for player " + player.getName().getString()), true);
 					return 1;
@@ -62,6 +68,9 @@ public class SetplayeritemuuidCommand {
 		Item protectedItem = ProtectedItemData.getProtectedItem(player);
 		if (protectedItem == null)
 			return;
+		if (!player.level().getGameRules().getBoolean(ItemsmpModGameRules.BOUND_ITEMS)) {
+			return;
+		}
 		CompoundTag data = player.getPersistentData();
 		data.remove("ProtectedStacks");
 		int index = 0;
@@ -88,6 +97,9 @@ public class SetplayeritemuuidCommand {
 		ServerPlayer clone = (ServerPlayer) event.getEntity();
 		CompoundTag originalData = original.getPersistentData();
 		CompoundTag cloneData = clone.getPersistentData();
+		if (!original.level().getGameRules().getBoolean(ItemsmpModGameRules.BOUND_ITEMS)) {
+			return;
+		}
 		if (originalData.contains("ProtectedItem")) {
 			cloneData.putString("ProtectedItem", originalData.getString("ProtectedItem"));
 		}
@@ -95,7 +107,6 @@ public class SetplayeritemuuidCommand {
 		for (int i = 0; i < count; i++) {
 			CompoundTag stackTag = originalData.getCompound("ProtectedStack_" + i);
 			ItemStack stack = ItemStack.parseOptional(clone.server.registryAccess(), stackTag);
-			// Only add if the stack is not empty (safety check)
 			if (!stack.isEmpty()) {
 				clone.getInventory().add(stack);
 			}

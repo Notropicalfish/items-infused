@@ -50,5 +50,7 @@
   "item.itemsmp.winged_mace.description_2": "§8On Right-Click:",
   "item.itemsmp.winged_mace.description_3": "§7If Leaping is fully charged, launches the user high into the air, to come crashing down on an enemy. ",
   "item.itemsmp.winged_mace.description_0": "§8When Striking an Enemy:",
-  "item.itemsmp.winged_mace.description_1": "§7Cancels fall damage and increases leaping charge by §a+1§7."
+  "item.itemsmp.winged_mace.description_1": "§7Cancels fall damage and increases leaping charge by §a+1§7.",
+  "gamerule.boundItems.description": "Special items can only be used by specific player(s).",
+  "gamerule.boundItems": "Bound Items"
 }
