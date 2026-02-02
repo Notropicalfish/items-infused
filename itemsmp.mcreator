@@ -238,8 +238,8 @@
     {
       "name": "Setplayeritemuuid",
       "type": "command",
-      "compiles": true,
-      "locked_code": false,
+      "compiles": false,
+      "locked_code": true,
       "registry_name": "setplayeritemuuid",
       "metadata": {
         "files": [
@@ -807,6 +807,15 @@
     ],
     "ITEMS:minecraft:foot_armor": [
       "~CUSTOM:Swift.boots"
+    ],
+    "ITEMS:mod:special_items": [
+      "CUSTOM:LuckyPick",
+      "CUSTOM:AetherBlade",
+      "CUSTOM:AllKnowingOrange",
+      "CUSTOM:Blackheart",
+      "CUSTOM:Shorkie",
+      "CUSTOM:Swift.boots",
+      "CUSTOM:CrystalHeart"
     ]
   },
   "tab_element_order": {},
@@ -862,13 +871,13 @@
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModBlocks.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModItems.java",
       "src/main/resources/assets/itemsmp/sounds.json",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModSounds.java",
-      "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
-      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
       "src/main/java/shop/notropicalfish/itemsmp/network/ItemsmpModVariables.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModSounds.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {
