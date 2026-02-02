@@ -990,6 +990,34 @@
         ]
       },
       "path": "~/items/Wither Blade"
+    },
+    {
+      "name": "VoidAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "void_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/item/VoidAxeItem.java",
+          "src/main/resources/assets/itemsmp/models/item/void_axe.json"
+        ]
+      },
+      "path": "~/items/Void Axe"
+    },
+    {
+      "name": "VoidAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/advancement/recipes/void_axe_recipe.json",
+          "src/main/resources/data/itemsmp/recipe/void_axe_recipe.json"
+        ]
+      },
+      "path": "~/items/Void Axe"
     }
   ],
   "variable_elements": [
@@ -1276,6 +1304,7 @@
       "~CUSTOM:Swift.boots"
     ],
     "ITEMS:minecraft:axes": [
+      "~CUSTOM:VoidAxe",
       "~CUSTOM:WingedMace"
     ]
   },
@@ -1338,7 +1367,8 @@
       "gamerule.boundItems": "Bound Items",
       "item.itemsmp.kunai": "Kunai",
       "item.itemsmp.wither_blade": "Withering Blade",
-      "item.itemsmp.emerald_katana": "Emerald Katana"
+      "item.itemsmp.emerald_katana": "Emerald Katana",
+      "item.itemsmp.void_axe": "Void Axe"
     }
   },
   "metadata": {

@@ -40,6 +40,7 @@ public class ItemsmpModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(ItemsmpModItems.EMERALD_KATANA.get());
+			tabData.accept(ItemsmpModItems.VOID_AXE.get());
 		}
 	}
 }

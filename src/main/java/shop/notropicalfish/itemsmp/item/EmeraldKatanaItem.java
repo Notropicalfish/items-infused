@@ -52,7 +52,7 @@ public class EmeraldKatanaItem extends SwordItem {
 	};
 
 	public EmeraldKatanaItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 3f, -2.2f)));
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 6f, -2.2f)));
 	}
 
 	@Override

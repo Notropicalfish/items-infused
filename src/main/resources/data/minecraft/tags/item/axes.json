@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "itemsmp:void_axe",
     "itemsmp:winged_mace"
   ]
 }
