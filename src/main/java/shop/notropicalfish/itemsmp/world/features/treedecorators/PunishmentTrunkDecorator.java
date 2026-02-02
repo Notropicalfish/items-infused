@@ -38,25 +38,25 @@ public class PunishmentTrunkDecorator extends TrunkVineDecorator {
 			if (context.random().nextInt(3) > 0) {
 				BlockPos pos = blockpos.west();
 				if (context.isAir(pos)) {
-					context.setBlock(pos, oriented(Blocks.CAVE_VINES_PLANT.defaultBlockState(), Direction.EAST));
+					context.setBlock(pos, oriented(Blocks.AIR.defaultBlockState(), Direction.EAST));
 				}
 			}
 			if (context.random().nextInt(3) > 0) {
 				BlockPos pos = blockpos.east();
 				if (context.isAir(pos)) {
-					context.setBlock(pos, oriented(Blocks.CAVE_VINES_PLANT.defaultBlockState(), Direction.WEST));
+					context.setBlock(pos, oriented(Blocks.AIR.defaultBlockState(), Direction.WEST));
 				}
 			}
 			if (context.random().nextInt(3) > 0) {
 				BlockPos pos = blockpos.north();
 				if (context.isAir(pos)) {
-					context.setBlock(pos, oriented(Blocks.CAVE_VINES_PLANT.defaultBlockState(), Direction.SOUTH));
+					context.setBlock(pos, oriented(Blocks.AIR.defaultBlockState(), Direction.SOUTH));
 				}
 			}
 			if (context.random().nextInt(3) > 0) {
 				BlockPos pos = blockpos.south();
 				if (context.isAir(pos)) {
-					context.setBlock(pos, oriented(Blocks.CAVE_VINES_PLANT.defaultBlockState(), Direction.NORTH));
+					context.setBlock(pos, oriented(Blocks.AIR.defaultBlockState(), Direction.NORTH));
 				}
 			}
 		});

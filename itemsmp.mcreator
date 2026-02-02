@@ -345,17 +345,17 @@
       "registry_name": "blackhorizern",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itemsmp/models/block/blackhorizern_portal_ew.json",
-          "src/main/resources/data/itemsmp/dimension_type/blackhorizern.json",
+          "src/main/resources/assets/itemsmp/models/block/blackhorizern_portal_ns.json",
+          "src/main/resources/assets/itemsmp/blockstates/blackhorizern_portal.json",
+          "src/main/resources/data/itemsmp/dimension/blackhorizern.json",
           "src/main/java/shop/notropicalfish/itemsmp/world/teleporter/BlackhorizernTeleporter.java",
           "src/main/resources/assets/itemsmp/models/item/blackhorizern.json",
-          "src/main/java/shop/notropicalfish/itemsmp/block/BlackhorizernPortalBlock.java",
-          "src/main/resources/assets/itemsmp/models/block/blackhorizern_portal_ns.json",
           "src/main/java/shop/notropicalfish/itemsmp/world/teleporter/BlackhorizernPortalShape.java",
-          "src/main/resources/assets/itemsmp/blockstates/blackhorizern_portal.json",
+          "src/main/resources/data/itemsmp/dimension_type/blackhorizern.json",
+          "src/main/java/shop/notropicalfish/itemsmp/item/BlackhorizernItem.java",
+          "src/main/resources/assets/itemsmp/models/block/blackhorizern_portal_ew.json",
           "src/main/java/shop/notropicalfish/itemsmp/world/dimension/BlackhorizernDimension.java",
-          "src/main/resources/data/itemsmp/dimension/blackhorizern.json",
-          "src/main/java/shop/notropicalfish/itemsmp/item/BlackhorizernItem.java"
+          "src/main/java/shop/notropicalfish/itemsmp/block/BlackhorizernPortalBlock.java"
         ]
       },
       "path": "~/items/Black Heart"
@@ -368,11 +368,11 @@
       "registry_name": "punishment",
       "metadata": {
         "files": [
-          "src/main/java/shop/notropicalfish/itemsmp/world/features/treedecorators/PunishmentTrunkDecorator.java",
-          "src/main/resources/data/itemsmp/worldgen/configured_feature/punishment_tree.json",
+          "src/main/resources/data/itemsmp/worldgen/placed_feature/punishment_tree.json",
           "src/main/java/shop/notropicalfish/itemsmp/world/features/treedecorators/PunishmentLeaveDecorator.java",
-          "src/main/resources/data/itemsmp/worldgen/biome/punishment.json",
-          "src/main/resources/data/itemsmp/worldgen/placed_feature/punishment_tree.json"
+          "src/main/resources/data/itemsmp/worldgen/configured_feature/punishment_tree.json",
+          "src/main/java/shop/notropicalfish/itemsmp/world/features/treedecorators/PunishmentTrunkDecorator.java",
+          "src/main/resources/data/itemsmp/worldgen/biome/punishment.json"
         ]
       },
       "path": "~/items/Black Heart"
@@ -1270,6 +1270,7 @@
       "~CUSTOM:AetherBlade"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.OBSIDIAN",
       "~Blocks.CONCRETE_POWDER#15",
       "~Blocks.CONCRETE#15"
     ],

@@ -417,14 +417,14 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:black_concrete_powder"
+                              "Name": "minecraft:obsidian"
                             }
                           }
                         },
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:black_concrete"
+                            "Name": "minecraft:obsidian"
                           }
                         }
                       ]
@@ -442,7 +442,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:black_concrete"
+                        "Name": "minecraft:obsidian"
                       }
                     }
                   }
