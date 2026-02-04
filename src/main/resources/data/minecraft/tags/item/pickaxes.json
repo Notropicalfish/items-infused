@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "itemsmp:void_pickaxe",
     "itemsmp:lucky_pick"
   ]
 }
