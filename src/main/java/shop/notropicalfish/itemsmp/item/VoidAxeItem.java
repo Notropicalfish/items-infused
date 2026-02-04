@@ -35,7 +35,7 @@ public class VoidAxeItem extends AxeItem {
 
 		@Override
 		public float getAttackDamageBonus() {
-			return 0;
+			return 3;
 		}
 
 		@Override
@@ -52,10 +52,16 @@ public class VoidAxeItem extends AxeItem {
 		public Ingredient getRepairIngredient() {
 			return Ingredient.of(new ItemStack(Blocks.OBSIDIAN));
 		}
+		
 	};
 
 	public VoidAxeItem() {
 		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 6f, -3f)).fireResistant());
+	}
+
+	@Override
+	public boolean isFoil(ItemStack itemstack) {
+		return true;
 	}
 
 	@Override

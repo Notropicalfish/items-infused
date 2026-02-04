@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "id": "itemsmp:blackheart"
+      "id": "itemsmp:crystal_heart"
     },
     "title": {
-      "translate": "advancements.forevercursed.title"
+      "translate": "advancements.ohgreatepower.title"
     },
     "description": {
-      "translate": "advancements.forevercursed.descr"
+      "translate": "advancements.ohgreatepower.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,13 +15,13 @@
     "hidden": false
   },
   "criteria": {
-    "forevercursed_0": {
+    "ohgreatepower_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "itemsmp:blackheart"
+              "itemsmp:crystal_heart"
             ],
             "count": {
               "min": 1,
@@ -33,7 +33,7 @@
     }
   },
   "rewards": {
-    "experience": 20
+    "experience": 60
   },
-  "parent": "itemsmp:ohgreatepower"
+  "parent": "itemsmp:magical_beginings"
 }

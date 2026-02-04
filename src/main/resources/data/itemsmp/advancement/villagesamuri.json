@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "id": "itemsmp:blackheart"
+      "id": "itemsmp:emerald_katana"
     },
     "title": {
-      "translate": "advancements.forevercursed.title"
+      "translate": "advancements.villagesamuri.title"
     },
     "description": {
-      "translate": "advancements.forevercursed.descr"
+      "translate": "advancements.villagesamuri.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,13 +15,13 @@
     "hidden": false
   },
   "criteria": {
-    "forevercursed_0": {
+    "villagesamuri_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "itemsmp:blackheart"
+              "itemsmp:emerald_katana"
             ],
             "count": {
               "min": 1,
@@ -33,7 +33,7 @@
     }
   },
   "rewards": {
-    "experience": 20
+    "experience": 30
   },
-  "parent": "itemsmp:ohgreatepower"
+  "parent": "itemsmp:selftaughtninja"
 }
