@@ -45,7 +45,7 @@ public class VoidAxeItem extends AxeItem {
 
 		@Override
 		public int getEnchantmentValue() {
-			return 2;
+			return 12;
 		}
 
 		@Override

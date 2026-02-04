@@ -47,7 +47,7 @@ public class VoidPickaxeItem extends PickaxeItem {
 
 		@Override
 		public int getEnchantmentValue() {
-			return 2;
+			return 12;
 		}
 
 		@Override
@@ -58,6 +58,11 @@ public class VoidPickaxeItem extends PickaxeItem {
 
 	public VoidPickaxeItem() {
 		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 3f, -2.8f)).fireResistant());
+	}
+
+	@Override
+	public boolean isFoil(ItemStack itemstack) {
+		return true;
 	}
 
 	private static final TagKey<Block> VEINMINE_ORES = TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath("c", "ores"));
@@ -81,7 +86,6 @@ public class VoidPickaxeItem extends PickaxeItem {
 		HashSet<BlockPos> visited = new HashSet<>();
 		Queue<BlockPos> queue = new LinkedList<>();
 		visited.add(start);
-		// Start BFS from neighboring blocks
 		for (int dx = -1; dx <= 1; dx++) {
 			for (int dy = -1; dy <= 1; dy++) {
 				for (int dz = -1; dz <= 1; dz++) {
@@ -98,15 +102,11 @@ public class VoidPickaxeItem extends PickaxeItem {
 			BlockState state = level.getBlockState(current);
 			if (!state.is(VEINMINE_ORES))
 				continue;
-			// 1️⃣ Remove block
 			level.setBlock(current, Blocks.AIR.defaultBlockState(), 3);
-			// 2️⃣ Spawn drops with enchantments applied
 			state.getBlock().playerDestroy(level, player, current, state, null, tool);
-			// Damage the tool
 			tool.hurtAndBreak(1, player, EquipmentSlot.MAINHAND);
 			if (tool.isEmpty())
 				return;
-			// Add neighbors to BFS
 			for (int dx = -1; dx <= 1; dx++) {
 				for (int dy = -1; dy <= 1; dy++) {
 					for (int dz = -1; dz <= 1; dz++) {
