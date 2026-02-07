@@ -32,5 +32,6 @@ public class ItemsmpModTabs {
 				tabData.accept(ItemsmpModItems.EMERALD_KATANA.get());
 				tabData.accept(ItemsmpModItems.VOID_AXE.get());
 				tabData.accept(ItemsmpModItems.VOID_PICKAXE.get());
+				tabData.accept(ItemsmpModItems.COPPER_DAGGER.get());
 			}).build());
 }

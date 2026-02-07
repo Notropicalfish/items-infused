@@ -31,6 +31,8 @@ public class ItemsmpModItems {
 	public static final DeferredItem<Item> EMERALD_KATANA;
 	public static final DeferredItem<Item> VOID_AXE;
 	public static final DeferredItem<Item> VOID_PICKAXE;
+	public static final DeferredItem<Item> COPPER_DAGGER;
+	public static final DeferredItem<Item> CRYSTAL_ORE;
 	static {
 		MAGICCRYSTAL = REGISTRY.register("magiccrystal", MagiccrystalItem::new);
 		LUCKY_PICK = REGISTRY.register("lucky_pick", LuckyPickItem::new);
@@ -47,6 +49,8 @@ public class ItemsmpModItems {
 		EMERALD_KATANA = REGISTRY.register("emerald_katana", EmeraldKatanaItem::new);
 		VOID_AXE = REGISTRY.register("void_axe", VoidAxeItem::new);
 		VOID_PICKAXE = REGISTRY.register("void_pickaxe", VoidPickaxeItem::new);
+		COPPER_DAGGER = REGISTRY.register("copper_dagger", CopperDaggerItem::new);
+		CRYSTAL_ORE = block(ItemsmpModBlocks.CRYSTAL_ORE);
 	}
 
 	// Start of user code block custom items

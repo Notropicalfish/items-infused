@@ -1125,6 +1125,25 @@
         ]
       },
       "path": "~/items/Electric Dagger"
+    },
+    {
+      "name": "CrystalOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/worldgen/placed_feature/crystal_ore.json",
+          "src/main/resources/data/itemsmp/loot_table/blocks/crystal_ore.json",
+          "src/main/resources/data/itemsmp/neoforge/biome_modifier/crystal_ore_biome_modifier.json",
+          "src/main/resources/assets/itemsmp/models/block/crystal_ore.json",
+          "src/main/resources/assets/itemsmp/blockstates/crystal_ore.json",
+          "src/main/resources/assets/itemsmp/models/item/crystal_ore.json",
+          "src/main/resources/data/itemsmp/worldgen/configured_feature/crystal_ore.json",
+          "src/main/java/shop/notropicalfish/itemsmp/block/CrystalOreBlock.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1416,6 +1435,12 @@
     "ITEMS:minecraft:axes": [
       "~CUSTOM:VoidAxe",
       "~CUSTOM:WingedMace"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:CrystalOre"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:CrystalOre"
     ]
   },
   "tab_element_order": {},
@@ -1490,7 +1515,8 @@
       "advancements.villagesamuri.title": "Village Samuri",
       "advancements.villagesamuri.descr": "Obtain the Emerald Katana",
       "item.itemsmp.void_pickaxe": "Void Pickaxe",
-      "item.itemsmp.copper_dagger": "Copper Dagger"
+      "item.itemsmp.copper_dagger": "Copper Dagger",
+      "block.itemsmp.crystal_ore": "Crystal Ore"
     }
   },
   "metadata": {
@@ -1501,13 +1527,13 @@
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModEntities.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModEntityRenderers.java",
       "src/main/resources/assets/itemsmp/sounds.json",
-      "src/main/java/shop/notropicalfish/itemsmp/network/ItemsmpModVariables.java",
-      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
       "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModSounds.java",
-      "src/main/resources/pack.mcmeta",
       "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml"
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
+      "src/main/java/shop/notropicalfish/itemsmp/network/ItemsmpModVariables.java",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {

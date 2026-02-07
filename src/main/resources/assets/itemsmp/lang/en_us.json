@@ -67,5 +67,7 @@
   "advancements.selftaughtninja.descr": "Craft Kunai",
   "advancements.villagesamuri.title": "Village Samuri",
   "advancements.villagesamuri.descr": "Obtain the Emerald Katana",
-  "item.itemsmp.void_pickaxe": "Void Pickaxe"
+  "item.itemsmp.void_pickaxe": "Void Pickaxe",
+  "item.itemsmp.copper_dagger": "Copper Dagger",
+  "block.itemsmp.crystal_ore": "Crystal Ore"
 }
