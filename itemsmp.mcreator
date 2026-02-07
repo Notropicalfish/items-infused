@@ -1544,7 +1544,8 @@
       "advancements.villagesamuri.descr": "Obtain the Emerald Katana",
       "item.itemsmp.void_pickaxe": "Void Pickaxe",
       "item.itemsmp.copper_dagger": "Copper Dagger",
-      "block.itemsmp.crystal_ore": "Crystal Ore"
+      "block.itemsmp.crystal_ore": "Crystal Ore",
+      "item.itemsmp.minecart_boots": "Minecart Boots"
     }
   },
   "metadata": {

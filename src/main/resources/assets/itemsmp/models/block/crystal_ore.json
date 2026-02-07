@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "itemsmp:block/crystal-ore",
-    "up": "itemsmp:block/crystal-ore",
-    "north": "itemsmp:block/crystal-ore",
-    "east": "itemsmp:block/crystal-ore",
-    "south": "itemsmp:block/crystal-ore",
-    "west": "itemsmp:block/crystal-ore",
+    "all": "itemsmp:block/crystal-ore",
     "particle": "itemsmp:block/crystal-ore"
   },
   "render_type": "solid"
