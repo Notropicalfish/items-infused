@@ -1097,6 +1097,34 @@
         ]
       },
       "path": "~/items/Tunnle Pick"
+    },
+    {
+      "name": "CopperDagger",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "copper_dagger",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/item/CopperDaggerItem.java",
+          "src/main/resources/assets/itemsmp/models/item/copper_dagger.json"
+        ]
+      },
+      "path": "~/items/Electric Dagger"
+    },
+    {
+      "name": "ElectricDaggerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_dagger_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/recipe/electric_dagger_recipe.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/electric_dagger_recipe.json"
+        ]
+      },
+      "path": "~/items/Electric Dagger"
     }
   ],
   "variable_elements": [
@@ -1345,6 +1373,7 @@
       "~CUSTOM:LuckyPick"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:CopperDagger",
       "~CUSTOM:EmeraldKatana",
       "~CUSTOM:WitherBlade",
       "~CUSTOM:AetherBlade"
@@ -1460,7 +1489,8 @@
       "advancements.selftaughtninja.descr": "Craft Kunai",
       "advancements.villagesamuri.title": "Village Samuri",
       "advancements.villagesamuri.descr": "Obtain the Emerald Katana",
-      "item.itemsmp.void_pickaxe": "Void Pickaxe"
+      "item.itemsmp.void_pickaxe": "Void Pickaxe",
+      "item.itemsmp.copper_dagger": "Copper Dagger"
     }
   },
   "metadata": {
