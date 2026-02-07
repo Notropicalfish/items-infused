@@ -67,20 +67,16 @@ public class CopperDaggerItem extends SwordItem {
 	@Override
 	public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
 		if (!attacker.level().isClientSide) {
-			// Increase hit count for this mob
 			int hits = hitCounter.getOrDefault(target, 0) + 1;
 			hitCounter.put(target, hits);
 			if (hits >= 3) {
 				Level level = attacker.level();
-				// Spawn lightning at mob
 				LightningBolt lightning = EntityType.LIGHTNING_BOLT.create(level);
 				if (lightning != null) {
 					lightning.moveTo(target.getX(), target.getY(), target.getZ());
 					level.addFreshEntity(lightning);
 				}
-				// Damage the dagger
 				stack.hurtAndBreak(8, attacker, EquipmentSlot.MAINHAND);
-				// Reset counter
 				hitCounter.put(target, 0);
 			}
 		}

@@ -33,5 +33,6 @@ public class ItemsmpModTabs {
 				tabData.accept(ItemsmpModItems.VOID_AXE.get());
 				tabData.accept(ItemsmpModItems.VOID_PICKAXE.get());
 				tabData.accept(ItemsmpModItems.COPPER_DAGGER.get());
+				tabData.accept(ItemsmpModItems.MINECART_BOOTS.get());
 			}).build());
 }

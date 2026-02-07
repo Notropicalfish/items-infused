@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "itemsmp:minecart_boots",
     "itemsmp:swift_boots"
   ]
 }

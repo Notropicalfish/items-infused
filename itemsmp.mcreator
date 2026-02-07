@@ -1125,6 +1125,34 @@
         ]
       },
       "path": "~/items/Electric Dagger"
+    },
+    {
+      "name": "Minecart",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "minecart",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itemsmp/models/item/minecart_boots.json",
+          "src/main/java/shop/notropicalfish/itemsmp/item/MinecartItem.java"
+        ]
+      },
+      "path": "~/items/Model Train"
+    },
+    {
+      "name": "MinecartBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minecart_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/advancement/recipes/minecart_boots_recipe.json",
+          "src/main/resources/data/itemsmp/recipe/minecart_boots_recipe.json"
+        ]
+      },
+      "path": "~/items/Model Train"
     }
   ],
   "variable_elements": [
@@ -1411,6 +1439,7 @@
       "~CUSTOM:Punishment"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:Minecart.boots",
       "~CUSTOM:Swift.boots"
     ],
     "ITEMS:minecraft:axes": [
@@ -1490,7 +1519,8 @@
       "advancements.villagesamuri.title": "Village Samuri",
       "advancements.villagesamuri.descr": "Obtain the Emerald Katana",
       "item.itemsmp.void_pickaxe": "Void Pickaxe",
-      "item.itemsmp.copper_dagger": "Copper Dagger"
+      "item.itemsmp.copper_dagger": "Copper Dagger",
+      "item.itemsmp.minecart_boots": "Minecart Boots"
     }
   },
   "metadata": {
