@@ -1153,6 +1153,25 @@
         ]
       },
       "path": "~/items/Model Train"
+    },
+    {
+      "name": "CrystalOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/worldgen/placed_feature/crystal_ore.json",
+          "src/main/java/shop/notropicalfish/itemsmp/block/CrystalOreBlock.java",
+          "src/main/resources/assets/itemsmp/models/item/crystal_ore.json",
+          "src/main/resources/assets/itemsmp/models/block/crystal_ore.json",
+          "src/main/resources/data/itemsmp/worldgen/configured_feature/crystal_ore.json",
+          "src/main/resources/data/itemsmp/neoforge/biome_modifier/crystal_ore_biome_modifier.json",
+          "src/main/resources/data/itemsmp/loot_table/blocks/crystal_ore.json",
+          "src/main/resources/assets/itemsmp/blockstates/crystal_ore.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1439,12 +1458,17 @@
       "~CUSTOM:Punishment"
     ],
     "ITEMS:minecraft:foot_armor": [
-      "~CUSTOM:Minecart.boots",
       "~CUSTOM:Swift.boots"
     ],
     "ITEMS:minecraft:axes": [
       "~CUSTOM:VoidAxe",
       "~CUSTOM:WingedMace"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:CrystalOre"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:CrystalOre"
     ]
   },
   "tab_element_order": {},
@@ -1520,7 +1544,7 @@
       "advancements.villagesamuri.descr": "Obtain the Emerald Katana",
       "item.itemsmp.void_pickaxe": "Void Pickaxe",
       "item.itemsmp.copper_dagger": "Copper Dagger",
-      "item.itemsmp.minecart_boots": "Minecart Boots"
+      "block.itemsmp.crystal_ore": "Crystal Ore"
     }
   },
   "metadata": {
@@ -1545,6 +1569,10 @@
     "children": [
       {
         "name": "commands",
+        "children": []
+      },
+      {
+        "name": "Advancements",
         "children": []
       },
       {
@@ -1652,10 +1680,6 @@
             "children": []
           }
         ]
-      },
-      {
-        "name": "Advancements",
-        "children": []
       }
     ]
   },

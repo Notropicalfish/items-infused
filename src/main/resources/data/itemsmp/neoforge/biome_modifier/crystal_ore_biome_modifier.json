@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "itemsmp:punishment",
+  "features": "itemsmp:crystal_ore",
+  "step": "underground_ores"
+}

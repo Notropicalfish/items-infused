@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "itemsmp:block/crystal_ore"
+    },
+    "facing=east": {
+      "model": "itemsmp:block/crystal_ore",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "itemsmp:block/crystal_ore",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "itemsmp:block/crystal_ore",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "itemsmp:block/crystal_ore",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "itemsmp:block/crystal_ore",
+      "x": 90
+    }
+  }
+}
