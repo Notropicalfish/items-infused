@@ -35,5 +35,6 @@ public class ItemsmpModTabs {
 				tabData.accept(ItemsmpModItems.COPPER_DAGGER.get());
 				tabData.accept(ItemsmpModItems.MINECART_BOOTS.get());
 				tabData.accept(ItemsmpModBlocks.CRYSTAL_ORE.get().asItem());
+				tabData.accept(ItemsmpModItems.SPY_THIGH_HIGHS_LEGGINGS.get());
 			}).build());
 }

@@ -1172,6 +1172,34 @@
           "src/main/resources/assets/itemsmp/blockstates/crystal_ore.json"
         ]
       }
+    },
+    {
+      "name": "SpyThighHighs",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "spy_thigh_highs",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/item/SpyThighHighsItem.java",
+          "src/main/resources/assets/itemsmp/models/item/spy_thigh_highs_leggings.json"
+        ]
+      },
+      "path": "~/items/Knee High Cloak"
+    },
+    {
+      "name": "KneeHighCloakRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knee_high_cloak_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/advancement/recipes/knee_high_cloak_recipe.json",
+          "src/main/resources/data/itemsmp/recipe/knee_high_cloak_recipe.json"
+        ]
+      },
+      "path": "~/items/Knee High Cloak"
     }
   ],
   "variable_elements": [
@@ -1469,6 +1497,9 @@
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
       "~CUSTOM:CrystalOre"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:SpyThighHighs.legs"
     ]
   },
   "tab_element_order": {},
@@ -1545,7 +1576,8 @@
       "item.itemsmp.void_pickaxe": "Void Pickaxe",
       "item.itemsmp.copper_dagger": "Copper Dagger",
       "block.itemsmp.crystal_ore": "Crystal Ore",
-      "item.itemsmp.minecart_boots": "Minecart Boots"
+      "item.itemsmp.minecart_boots": "Minecart Boots",
+      "item.itemsmp.spy_thigh_highs_leggings": "Spy Thigh Highs"
     }
   },
   "metadata": {
