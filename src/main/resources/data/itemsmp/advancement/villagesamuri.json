@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "itemsmp:deleted_mod_element"
+      "id": "itemsmp:emerald_katana"
     },
     "title": {
       "translate": "advancements.villagesamuri.title"
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "itemsmp:deleted_mod_element"
+              "itemsmp:emerald_katana"
             ],
             "count": {
               "min": 1,
@@ -35,5 +35,5 @@
   "rewards": {
     "experience": 30
   },
-  "parent": "itemsmp:deleted_mod_element"
+  "parent": "itemsmp:selftaughtninja"
 }

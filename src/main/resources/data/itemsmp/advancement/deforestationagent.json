@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "itemsmp:deleted_mod_element"
+      "id": "itemsmp:void_axe"
     },
     "title": {
       "translate": "advancements.deforestationagent.title"
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "itemsmp:deleted_mod_element"
+              "itemsmp:void_axe"
             ],
             "count": {
               "min": 1,
@@ -35,5 +35,5 @@
   "rewards": {
     "experience": 20
   },
-  "parent": "itemsmp:deleted_mod_element"
+  "parent": "itemsmp:magical_beginings"
 }

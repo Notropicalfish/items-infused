@@ -1,5 +1,6 @@
 package shop.notropicalfish.itemsmp.procedures;
 
+import shop.notropicalfish.itemsmp.network.ItemsmpModVariables;
 import shop.notropicalfish.itemsmp.ItemsmpMod;
 
 import net.minecraft.world.level.LevelAccessor;
@@ -15,10 +16,15 @@ public class BlackheartItemInInventoryTickProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof ServerPlayer _plr0 && _plr0.level() instanceof ServerLevel && _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().get(ResourceLocation.parse("itemsmp:forevercursed"))).isDone()
-				&& !(entity instanceof Mob _mobEnt1 && _mobEnt1.isAggressive())) {
+		if ((entity instanceof ServerPlayer _plr0 && _plr0.level() instanceof ServerLevel && _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().get(ResourceLocation.parse("itemsmp:forevercursed"))).isDone()
+				|| entity.getData(ItemsmpModVariables.PLAYER_VARIABLES).is_pvp_disabled_for_player == true) && !(entity instanceof Mob _mobEnt1 && _mobEnt1.isAggressive())) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You have enraged the god of death, and he will not be so merciful"), true);
+			{
+				ItemsmpModVariables.PlayerVariables _vars = entity.getData(ItemsmpModVariables.PLAYER_VARIABLES);
+				_vars.is_pvp_disabled_for_player = false;
+				_vars.markSyncDirty();
+			}
 			ItemsmpMod.queueServerWork(60, () -> {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("trigger success"), true);

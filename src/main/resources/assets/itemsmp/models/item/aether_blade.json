@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "itemsmp:item/aether_knife"
+    "layer0": "itemsmp:item/aether_blade_arthys"
   }
 }

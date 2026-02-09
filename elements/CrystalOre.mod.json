@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "crystal-ore",
+    "texture": "crystal_ore_arthys",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -12,7 +12,7 @@
     "customModelName": "Single texture",
     "rotationMode": 4,
     "enablePitch": false,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animations": [],
     "itemTexture": "",
@@ -114,7 +114,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 2,
+    "luminance": 10,
     "unbreakable": false,
     "vanillaToolTier": "DIAMOND",
     "isBonemealable": false,

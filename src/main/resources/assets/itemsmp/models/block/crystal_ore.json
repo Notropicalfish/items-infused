@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "itemsmp:block/crystal-ore",
-    "particle": "itemsmp:block/crystal-ore"
+    "all": "itemsmp:block/crystal_ore_arthys",
+    "particle": "itemsmp:block/crystal_ore_arthys"
   },
   "render_type": "solid"
 }

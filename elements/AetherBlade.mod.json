@@ -5,7 +5,7 @@
     "toolType": "Sword",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "aether_knife",
+    "texture": "aether_blade_arthys",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "guiTexture": "",

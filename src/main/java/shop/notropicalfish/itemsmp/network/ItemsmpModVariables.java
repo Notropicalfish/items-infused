@@ -75,6 +75,7 @@ public class ItemsmpModVariables {
 		PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
 		PlayerVariables clone = new PlayerVariables();
 		clone.is_leaping = original.is_leaping;
+		clone.is_pvp_disabled_for_player = original.is_pvp_disabled_for_player;
 		if (!event.isWasDeath()) {
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
@@ -231,17 +232,20 @@ public class ItemsmpModVariables {
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
 		boolean _syncDirty = false;
 		public boolean is_leaping = false;
+		public boolean is_pvp_disabled_for_player = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putBoolean("is_leaping", is_leaping);
+			nbt.putBoolean("is_pvp_disabled_for_player", is_pvp_disabled_for_player);
 			return nbt;
 		}
 
 		@Override
 		public void deserializeNBT(HolderLookup.Provider lookupProvider, CompoundTag nbt) {
 			is_leaping = nbt.getBoolean("is_leaping");
+			is_pvp_disabled_for_player = nbt.getBoolean("is_pvp_disabled_for_player");
 		}
 
 		public void markSyncDirty() {
