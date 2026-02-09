@@ -1,6 +1,8 @@
 package shop.notropicalfish.itemsmp.procedures;
 
-import net.neoforged.bus.api.Event;
+import shop.notropicalfish.itemsmp.network.ItemsmpModVariables;
+
+import net.minecraft.world.entity.Entity;
 
 public class ZoomOverlayDisplayOverlayIngameProcedure {
 	public static boolean execute(Entity entity) {

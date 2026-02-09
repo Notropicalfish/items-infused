@@ -117,8 +117,8 @@
       "registry_name": "lucky_pick",
       "metadata": {
         "files": [
-          "src/main/java/shop/notropicalfish/itemsmp/item/LuckyPickItem.java",
-          "src/main/resources/assets/itemsmp/models/item/lucky_pick.json"
+          "src/main/resources/assets/itemsmp/models/item/lucky_pick.json",
+          "src/main/java/shop/notropicalfish/itemsmp/item/LuckyPickItem.java"
         ]
       },
       "path": "~/items/Lucky Pick"
@@ -201,8 +201,8 @@
       "registry_name": "aether_blade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itemsmp/models/item/aether_blade.json",
-          "src/main/java/shop/notropicalfish/itemsmp/item/AetherBladeItem.java"
+          "src/main/java/shop/notropicalfish/itemsmp/item/AetherBladeItem.java",
+          "src/main/resources/assets/itemsmp/models/item/aether_blade.json"
         ]
       },
       "path": "~/items/Aether Blade"
@@ -215,8 +215,8 @@
       "registry_name": "craft_lucky_pick",
       "metadata": {
         "files": [
-          "src/main/resources/data/itemsmp/advancement/recipes/craft_lucky_pick.json",
-          "src/main/resources/data/itemsmp/recipe/craft_lucky_pick.json"
+          "src/main/resources/data/itemsmp/recipe/craft_lucky_pick.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/craft_lucky_pick.json"
         ]
       },
       "path": "~/items/Lucky Pick"
@@ -345,16 +345,16 @@
       "registry_name": "blackhorizern",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itemsmp/models/block/blackhorizern_portal_ew.json",
-          "src/main/resources/data/itemsmp/dimension_type/blackhorizern.json",
           "src/main/java/shop/notropicalfish/itemsmp/world/teleporter/BlackhorizernTeleporter.java",
-          "src/main/resources/assets/itemsmp/models/item/blackhorizern.json",
-          "src/main/java/shop/notropicalfish/itemsmp/block/BlackhorizernPortalBlock.java",
           "src/main/resources/assets/itemsmp/models/block/blackhorizern_portal_ns.json",
+          "src/main/resources/assets/itemsmp/models/item/blackhorizern.json",
           "src/main/java/shop/notropicalfish/itemsmp/world/teleporter/BlackhorizernPortalShape.java",
+          "src/main/resources/data/itemsmp/dimension_type/blackhorizern.json",
           "src/main/resources/assets/itemsmp/blockstates/blackhorizern_portal.json",
-          "src/main/java/shop/notropicalfish/itemsmp/world/dimension/BlackhorizernDimension.java",
+          "src/main/resources/assets/itemsmp/models/block/blackhorizern_portal_ew.json",
           "src/main/resources/data/itemsmp/dimension/blackhorizern.json",
+          "src/main/java/shop/notropicalfish/itemsmp/block/BlackhorizernPortalBlock.java",
+          "src/main/java/shop/notropicalfish/itemsmp/world/dimension/BlackhorizernDimension.java",
           "src/main/java/shop/notropicalfish/itemsmp/item/BlackhorizernItem.java"
         ]
       },
@@ -368,11 +368,11 @@
       "registry_name": "punishment",
       "metadata": {
         "files": [
-          "src/main/java/shop/notropicalfish/itemsmp/world/features/treedecorators/PunishmentTrunkDecorator.java",
-          "src/main/resources/data/itemsmp/worldgen/configured_feature/punishment_tree.json",
           "src/main/java/shop/notropicalfish/itemsmp/world/features/treedecorators/PunishmentLeaveDecorator.java",
+          "src/main/resources/data/itemsmp/worldgen/placed_feature/punishment_tree.json",
           "src/main/resources/data/itemsmp/worldgen/biome/punishment.json",
-          "src/main/resources/data/itemsmp/worldgen/placed_feature/punishment_tree.json"
+          "src/main/resources/data/itemsmp/worldgen/configured_feature/punishment_tree.json",
+          "src/main/java/shop/notropicalfish/itemsmp/world/features/treedecorators/PunishmentTrunkDecorator.java"
         ]
       },
       "path": "~/items/Black Heart"
@@ -385,11 +385,11 @@
       "registry_name": "shorkie",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itemsmp/models/item/shorkie.json",
+          "src/main/resources/assets/itemsmp/blockstates/shorkie.json",
+          "src/main/resources/assets/itemsmp/models/block/shorkie.json",
           "src/main/java/shop/notropicalfish/itemsmp/block/ShorkieBlock.java",
           "src/main/resources/data/itemsmp/loot_table/blocks/shorkie.json",
-          "src/main/resources/assets/itemsmp/models/block/shorkie.json",
-          "src/main/resources/assets/itemsmp/blockstates/shorkie.json"
+          "src/main/resources/assets/itemsmp/models/item/shorkie.json"
         ]
       },
       "path": "~/items/Shorkie"
@@ -444,8 +444,8 @@
       "registry_name": "craft_crystal_heart",
       "metadata": {
         "files": [
-          "src/main/resources/data/itemsmp/recipe/craft_crystal_heart.json",
-          "src/main/resources/data/itemsmp/advancement/recipes/craft_crystal_heart.json"
+          "src/main/resources/data/itemsmp/advancement/recipes/craft_crystal_heart.json",
+          "src/main/resources/data/itemsmp/recipe/craft_crystal_heart.json"
         ]
       },
       "path": "~/items/Crystal Heart"
@@ -1069,8 +1069,8 @@
       "~CUSTOM:AetherBlade"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.CONCRETE_POWDER#15",
-      "~Blocks.CONCRETE#15"
+      "~Blocks.CONCRETE#15",
+      "~Blocks.CONCRETE_POWDER#15"
     ],
     "BIOMES:minecraft:has_structure/igloo": [
       "~CUSTOM:Punishment"
@@ -1099,9 +1099,7 @@
     "BIOMES:minecraft:has_structure/ruined_portal_swamp": [
       "~CUSTOM:Punishment"
     ],
-    "ITEMS:minecraft:foot_armor": [
-      "~CUSTOM:Swift.boots"
-    ],
+    "ITEMS:minecraft:foot_armor": [],
     "ITEMS:minecraft:axes": [
       "~CUSTOM:WingedMace"
     ]
@@ -1154,7 +1152,7 @@
       "subtitles.shorkiesqueek": "Shorkie Squeeks Cutley \u003e///\u003c",
       "subtitles.shorkiesqueek4": "Shorkie Squeeks Cutely \u003e///\u003c",
       "subtitles.shorkiesqueek3": "Shorkie Squeeks Cutely \u003e///\u003c",
-      "item.itemsmp.winged_mace": "§6Winged Mace",
+      "item.itemsmp.winged_mace": "§6§nWinged Mace",
       "item.itemsmp.winged_mace.description_6": "",
       "item.itemsmp.winged_mace.description_7": "§9+30% Bash Damage while Leaping",
       "item.itemsmp.winged_mace.description_4": "§7Enemies struck while leaping are dealt base damage §b+30%§7 of their max hp.",
@@ -1169,14 +1167,14 @@
     "files": [
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModBlocks.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModItems.java",
-      "src/main/resources/assets/itemsmp/sounds.json",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModSounds.java",
-      "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
+      "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModSounds.java",
       "src/main/java/shop/notropicalfish/itemsmp/network/ItemsmpModVariables.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/resources/assets/itemsmp/sounds.json",
+      "src/main/resources/META-INF/accesstransformer.cfg"
     ]
   },
   "foldersRoot": {

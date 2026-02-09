@@ -1,6 +1,20 @@
 package shop.notropicalfish.itemsmp.procedures;
 
+import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.ICancellableEvent;
 import net.neoforged.bus.api.Event;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+
+import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class TestideaProcedure {
@@ -22,7 +36,7 @@ public class TestideaProcedure {
 			if (event instanceof ICancellableEvent _cancellable) {
 				_cancellable.setCanceled(true);
 			}
-			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)), (float) (6.5 + (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) * 0.4));
+			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)), (float) (5.5 + (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) * 0.2));
 			sourceentity.fallDistance = 0;
 		}
 	}

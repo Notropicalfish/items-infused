@@ -1,5 +1,28 @@
 package shop.notropicalfish.itemsmp.item;
 
+import shop.notropicalfish.itemsmp.procedures.WingedMaceToolInInventoryTickProcedure;
+import shop.notropicalfish.itemsmp.procedures.WingedMaceRightclickedProcedure;
+import shop.notropicalfish.itemsmp.procedures.WingedMaceLivingEntityIsHitWithToolProcedure;
+import shop.notropicalfish.itemsmp.init.ItemsmpModItems;
+
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.*;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.tags.TagKey;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.network.chat.Component;
+
+import java.util.List;
+
 public class WingedMaceItem extends AxeItem {
 	private static final Tier TOOL_TIER = new Tier() {
 		@Override
