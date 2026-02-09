@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "itemsmp:deleted_mod_element"
+    },
+    "title": {
+      "translate": "advancements.villagesamuri.title"
+    },
+    "description": {
+      "translate": "advancements.villagesamuri.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "villagesamuri_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "itemsmp:deleted_mod_element"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 30
+  },
+  "parent": "itemsmp:deleted_mod_element"
+}

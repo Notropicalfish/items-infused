@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "itemsmp:wither_blade",
     "itemsmp:aether_blade"
   ]
 }

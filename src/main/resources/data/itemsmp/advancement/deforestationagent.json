@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "itemsmp:deleted_mod_element"
+    },
+    "title": {
+      "translate": "advancements.deforestationagent.title"
+    },
+    "description": {
+      "translate": "advancements.deforestationagent.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "deforestationagent_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "itemsmp:deleted_mod_element"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "itemsmp:deleted_mod_element"
+}

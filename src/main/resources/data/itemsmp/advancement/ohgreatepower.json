@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "itemsmp:crystal_heart"
+    },
+    "title": {
+      "translate": "advancements.ohgreatepower.title"
+    },
+    "description": {
+      "translate": "advancements.ohgreatepower.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ohgreatepower_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "itemsmp:crystal_heart"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 60
+  },
+  "parent": "itemsmp:deleted_mod_element"
+}

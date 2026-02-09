@@ -2,8 +2,8 @@
   "_fv": 79,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Cursed till the end of time",
-    "achievementDescription": "Watch your actions you are no longer free",
+    "achievementName": "Immortal Curse",
+    "achievementDescription": "You are no longer free from judgment",
     "achievementIcon": {
       "value": "CUSTOM:Blackheart"
     },
@@ -14,10 +14,10 @@
     "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [],
-    "rewardXP": 0,
+    "rewardXP": 20,
     "achievementType": "task",
     "parent": {
-      "value": "adventure/adventuring_time"
+      "value": "CUSTOM:Ohgreatepower"
     },
     "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"item_in_inventory\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:Blackheart</field></block></value></block></next></block></xml>"
   }

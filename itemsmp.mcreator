@@ -117,8 +117,8 @@
       "registry_name": "lucky_pick",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itemsmp/models/item/lucky_pick.json",
-          "src/main/java/shop/notropicalfish/itemsmp/item/LuckyPickItem.java"
+          "src/main/java/shop/notropicalfish/itemsmp/item/LuckyPickItem.java",
+          "src/main/resources/assets/itemsmp/models/item/lucky_pick.json"
         ]
       },
       "path": "~/items/Lucky Pick"
@@ -201,8 +201,8 @@
       "registry_name": "aether_blade",
       "metadata": {
         "files": [
-          "src/main/java/shop/notropicalfish/itemsmp/item/AetherBladeItem.java",
-          "src/main/resources/assets/itemsmp/models/item/aether_blade.json"
+          "src/main/resources/assets/itemsmp/models/item/aether_blade.json",
+          "src/main/java/shop/notropicalfish/itemsmp/item/AetherBladeItem.java"
         ]
       },
       "path": "~/items/Aether Blade"
@@ -215,8 +215,8 @@
       "registry_name": "craft_lucky_pick",
       "metadata": {
         "files": [
-          "src/main/resources/data/itemsmp/recipe/craft_lucky_pick.json",
-          "src/main/resources/data/itemsmp/advancement/recipes/craft_lucky_pick.json"
+          "src/main/resources/data/itemsmp/advancement/recipes/craft_lucky_pick.json",
+          "src/main/resources/data/itemsmp/recipe/craft_lucky_pick.json"
         ]
       },
       "path": "~/items/Lucky Pick"
@@ -385,11 +385,11 @@
       "registry_name": "shorkie",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itemsmp/blockstates/shorkie.json",
-          "src/main/resources/assets/itemsmp/models/block/shorkie.json",
+          "src/main/resources/assets/itemsmp/models/item/shorkie.json",
           "src/main/java/shop/notropicalfish/itemsmp/block/ShorkieBlock.java",
           "src/main/resources/data/itemsmp/loot_table/blocks/shorkie.json",
-          "src/main/resources/assets/itemsmp/models/item/shorkie.json"
+          "src/main/resources/assets/itemsmp/models/block/shorkie.json",
+          "src/main/resources/assets/itemsmp/blockstates/shorkie.json"
         ]
       },
       "path": "~/items/Shorkie"
@@ -444,8 +444,8 @@
       "registry_name": "craft_crystal_heart",
       "metadata": {
         "files": [
-          "src/main/resources/data/itemsmp/advancement/recipes/craft_crystal_heart.json",
-          "src/main/resources/data/itemsmp/recipe/craft_crystal_heart.json"
+          "src/main/resources/data/itemsmp/recipe/craft_crystal_heart.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/craft_crystal_heart.json"
         ]
       },
       "path": "~/items/Crystal Heart"
@@ -819,6 +819,387 @@
         ]
       },
       "path": "~/items/OriginalMaceNerf"
+    },
+    {
+      "name": "WitherBlade",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wither_blade",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/item/WitherBladeItem.java",
+          "src/main/resources/assets/itemsmp/models/item/wither_blade.json"
+        ]
+      },
+      "path": "~/items/Wither Blade"
+    },
+    {
+      "name": "WitherBladeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wither_blade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/recipe/wither_blade_recipe.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/wither_blade_recipe.json"
+        ]
+      },
+      "path": "~/items/Wither Blade"
+    },
+    {
+      "name": "CopperDagger",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "copper_dagger",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/item/CopperDaggerItem.java",
+          "src/main/resources/assets/itemsmp/models/item/copper_dagger.json"
+        ]
+      },
+      "path": "~/items/Electric Dagger"
+    },
+    {
+      "name": "Deforestationagent",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deforestationagent",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/advancement/deforestationagent.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Villagesamuri",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "villagesamuri",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/advancement/villagesamuri.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Minecart",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "minecart",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itemsmp/models/item/minecart_boots.json",
+          "src/main/java/shop/notropicalfish/itemsmp/item/MinecartItem.java"
+        ]
+      },
+      "path": "~/items/Model Train"
+    },
+    {
+      "name": "VoidAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "void_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/item/VoidAxeItem.java",
+          "src/main/resources/assets/itemsmp/models/item/void_axe.json"
+        ]
+      },
+      "path": "~/items/Void Axe"
+    },
+    {
+      "name": "VoidPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "void_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itemsmp/models/item/void_pickaxe.json",
+          "src/main/java/shop/notropicalfish/itemsmp/item/VoidPickaxeItem.java"
+        ]
+      },
+      "path": "~/items/Tunnle Pick"
+    },
+    {
+      "name": "BoundItems",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bound_items",
+      "metadata": {
+        "type": "logic",
+        "files": []
+      },
+      "path": "~/commands"
+    },
+    {
+      "name": "SpyThighHighs",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "spy_thigh_highs",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/item/SpyThighHighsItem.java",
+          "src/main/resources/assets/itemsmp/models/item/spy_thigh_highs_leggings.json"
+        ]
+      },
+      "path": "~/items/Knee High Cloak"
+    },
+    {
+      "name": "Kunai",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kunai",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/item/KunaiItem.java",
+          "src/main/resources/assets/itemsmp/models/item/kunai.json"
+        ]
+      },
+      "path": "~/items/Kunai"
+    },
+    {
+      "name": "Ohgreatepower",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ohgreatepower",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/advancement/ohgreatepower.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "EmeraldKatana",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "emerald_katana",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/item/EmeraldKatanaItem.java",
+          "src/main/resources/assets/itemsmp/models/item/emerald_katana.json"
+        ]
+      },
+      "path": "~/items/Emerald Katana"
+    },
+    {
+      "name": "KunaiRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kunai_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/recipe/kunai_recipe.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/kunai_recipe.json"
+        ]
+      },
+      "path": "~/items/Kunai"
+    },
+    {
+      "name": "VoidAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/recipe/void_axe_recipe.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/void_axe_recipe.json"
+        ]
+      },
+      "path": "~/items/Void Axe"
+    },
+    {
+      "name": "WitherBladeLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "wither_blade_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/WitherBladeLivingEntityIsHitWithToolProcedure.java"
+        ]
+      },
+      "path": "~/items/Wither Blade"
+    },
+    {
+      "name": "ThrowingKnife",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "throwing_knife",
+      "metadata": {
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/entity/ThrowingKnifeEntity.java"
+        ]
+      },
+      "path": "~/items/Kunai"
+    },
+    {
+      "name": "CrystalOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/worldgen/configured_feature/crystal_ore.json",
+          "src/main/resources/assets/itemsmp/blockstates/crystal_ore.json",
+          "src/main/resources/data/itemsmp/neoforge/biome_modifier/crystal_ore_biome_modifier.json",
+          "src/main/resources/assets/itemsmp/models/block/crystal_ore.json",
+          "src/main/java/shop/notropicalfish/itemsmp/block/CrystalOreBlock.java",
+          "src/main/resources/data/itemsmp/loot_table/blocks/crystal_ore.json",
+          "src/main/resources/data/itemsmp/worldgen/placed_feature/crystal_ore.json",
+          "src/main/resources/assets/itemsmp/models/item/crystal_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "MinecartBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minecart_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/recipe/minecart_boots_recipe.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/minecart_boots_recipe.json"
+        ]
+      },
+      "path": "~/items/Model Train"
+    },
+    {
+      "name": "KneeHighCloakRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knee_high_cloak_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/advancement/recipes/knee_high_cloak_recipe.json",
+          "src/main/resources/data/itemsmp/recipe/knee_high_cloak_recipe.json"
+        ]
+      },
+      "path": "~/items/Knee High Cloak"
+    },
+    {
+      "name": "ElectricDaggerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_dagger_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/recipe/electric_dagger_recipe.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/electric_dagger_recipe.json"
+        ]
+      },
+      "path": "~/items/Electric Dagger"
+    },
+    {
+      "name": "Selftaughtninja",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "selftaughtninja",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/advancement/selftaughtninja.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "KunaiRangedItemShootsProjectile",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "kunai_ranged_item_shoots_projectile",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/KunaiRangedItemShootsProjectileProcedure.java"
+        ]
+      },
+      "path": "~/items/Kunai"
+    },
+    {
+      "name": "MagicalBeginings",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magical_beginings",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/advancement/magical_beginings.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "EmeraldKatanaRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_katana_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/recipe/emerald_katana_recipe.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/emerald_katana_recipe.json"
+        ]
+      },
+      "path": "~/items/Emerald Katana"
     }
   ],
   "variable_elements": [
@@ -1066,11 +1447,13 @@
       "~CUSTOM:LuckyPick"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:WitherBlade",
       "~CUSTOM:AetherBlade"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.CONCRETE#15",
-      "~Blocks.CONCRETE_POWDER#15"
+      "~Blocks.OBSIDIAN",
+      "~Blocks.CONCRETE_POWDER#15",
+      "~Blocks.CONCRETE#15"
     ],
     "BIOMES:minecraft:has_structure/igloo": [
       "~CUSTOM:Punishment"
@@ -1099,9 +1482,17 @@
     "BIOMES:minecraft:has_structure/ruined_portal_swamp": [
       "~CUSTOM:Punishment"
     ],
-    "ITEMS:minecraft:foot_armor": [],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:Swift.boots"
+    ],
     "ITEMS:minecraft:axes": [
       "~CUSTOM:WingedMace"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:CrystalOre"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:CrystalOre"
     ]
   },
   "tab_element_order": {},
@@ -1167,14 +1558,14 @@
     "files": [
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModBlocks.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModItems.java",
-      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
-      "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModSounds.java",
-      "src/main/java/shop/notropicalfish/itemsmp/network/ItemsmpModVariables.java",
       "src/main/resources/assets/itemsmp/sounds.json",
-      "src/main/resources/META-INF/accesstransformer.cfg"
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModSounds.java",
+      "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
+      "src/main/java/shop/notropicalfish/itemsmp/network/ItemsmpModVariables.java",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
@@ -1182,6 +1573,10 @@
     "children": [
       {
         "name": "commands",
+        "children": []
+      },
+      {
+        "name": "Advancements",
         "children": []
       },
       {
@@ -1212,11 +1607,11 @@
             "children": []
           },
           {
-            "name": "Magic Throwing Knives",
+            "name": "Crystal Heart",
             "children": []
           },
           {
-            "name": "Crystal Heart",
+            "name": "Kunai",
             "children": []
           },
           {
@@ -1253,7 +1648,12 @@
           },
           {
             "name": "Black Heart",
-            "children": []
+            "children": [
+              {
+                "name": "Blackhorizen",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Great Hammer",

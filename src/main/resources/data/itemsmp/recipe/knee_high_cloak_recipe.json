@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "aba",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "b": {
+      "item": "itemsmp:magiccrystal"
+    },
+    "c": {
+      "tag": "minecraft:wool"
+    },
+    "d": {
+      "item": "minecraft:leather_boots"
+    }
+  },
+  "result": {
+    "id": "itemsmp:spy_thigh_highs_leggings",
+    "count": 1
+  }
+}

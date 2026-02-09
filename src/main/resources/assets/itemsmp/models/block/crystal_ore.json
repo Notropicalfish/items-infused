@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "itemsmp:block/crystal-ore",
+    "particle": "itemsmp:block/crystal-ore"
+  },
+  "render_type": "solid"
+}

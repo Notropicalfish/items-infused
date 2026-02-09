@@ -1,14 +1,5 @@
 package shop.notropicalfish.itemsmp.world.dimension;
 
-import net.neoforged.neoforge.client.event.RegisterDimensionSpecialEffectsEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.api.distmarker.Dist;
-
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.DimensionSpecialEffects;
-
 public class BlackhorizernDimension {
 	@EventBusSubscriber(Dist.CLIENT)
 	public static class BlackhorizernSpecialEffectsHandler {

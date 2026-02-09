@@ -32,5 +32,8 @@
       }
     }
   },
-  "parent": "minecraft:adventure/adventuring_time"
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "itemsmp:ohgreatepower"
 }

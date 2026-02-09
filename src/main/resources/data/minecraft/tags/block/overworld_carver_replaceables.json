@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "minecraft:obsidian",
     "minecraft:black_concrete_powder",
     "minecraft:black_concrete"
   ]

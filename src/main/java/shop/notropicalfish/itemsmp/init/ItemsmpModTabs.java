@@ -27,5 +27,14 @@ public class ItemsmpModTabs {
 				tabData.accept(ItemsmpModItems.SWIFT_BOOTS.get());
 				tabData.accept(ItemsmpModItems.CRYSTAL_HEART.get());
 				tabData.accept(ItemsmpModItems.WINGED_MACE.get());
+				tabData.accept(ItemsmpModItems.WITHER_BLADE.get());
+				tabData.accept(ItemsmpModItems.COPPER_DAGGER.get());
+				tabData.accept(ItemsmpModItems.MINECART_BOOTS.get());
+				tabData.accept(ItemsmpModItems.VOID_AXE.get());
+				tabData.accept(ItemsmpModItems.VOID_PICKAXE.get());
+				tabData.accept(ItemsmpModItems.SPY_THIGH_HIGHS_LEGGINGS.get());
+				tabData.accept(ItemsmpModItems.KUNAI.get());
+				tabData.accept(ItemsmpModItems.EMERALD_KATANA.get());
+				tabData.accept(ItemsmpModBlocks.CRYSTAL_ORE.get().asItem());
 			}).build());
 }

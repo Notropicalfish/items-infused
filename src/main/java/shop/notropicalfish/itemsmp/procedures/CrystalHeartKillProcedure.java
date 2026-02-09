@@ -21,9 +21,12 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.network.protocol.game.ClientboundSetTitleTextPacket;
 import net.minecraft.network.chat.TextColor;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.particles.ItemParticleOption;
 import net.minecraft.core.BlockPos;
@@ -55,15 +58,18 @@ public class CrystalHeartKillProcedure {
 						serverLevel.sendParticles(new ItemParticleOption(ParticleTypes.ITEM, new ItemStack(ItemsmpModItems.BLACKHEART.get())), player.getX(), player.getY() + 1.0, player.getZ(), 10, 0.3, 0.5, 0.3, 0.1);
 					}
 					if (!player.level().isClientSide && kills < 3) {
-						player.displayClientMessage(Component.translatable("translation.itemsmp.heart_kill").withStyle(style -> style.withColor(0xFF0000)), true);
+						player.displayClientMessage(Component.translatable("translation.itemsmp.heart_kill").withStyle(style -> style.withColor(0xFFFFFF)), true);
 					}
 					if (kills >= 3 && !player.getPersistentData().getBoolean("heartTitle")) {
 						if (player instanceof ServerPlayer serverPlayer) {
-							Component titleText = Component.translatable("translation.itemsmp.heart_title").withStyle(style -> style.withColor(TextColor.fromRgb(0xFF0000)));
+							Component titleText = Component.translatable("translation.itemsmp.heart_title").withStyle(style -> style.withColor(TextColor.fromRgb(0xFFFFFF)) // white color
+									.withItalic(true) // italics
+							);
 							serverPlayer.connection.send(new ClientboundSetTitleTextPacket(titleText));
 							serverPlayer.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 120, 5, false, true));
 						}
 						player.getPersistentData().putBoolean("heartTitle", true);
+						player.getPersistentData().putInt("blackhorizernTeleportTicks", 10);
 					}
 				}
 			}
@@ -101,6 +107,28 @@ public class CrystalHeartKillProcedure {
 					}
 				}
 			}
+		}
+	}
+
+	@SubscribeEvent
+	public static void onPlayerTick(EntityTickEvent.Post event) {
+		if (!(event.getEntity() instanceof ServerPlayer player))
+			return;
+		var data = player.getPersistentData();
+		if (!data.contains("blackhorizernTeleportTicks"))
+			return;
+		int ticks = data.getInt("blackhorizernTeleportTicks") - 1;
+		if (ticks > 0) {
+			data.putInt("blackhorizernTeleportTicks", ticks);
+			return;
+		}
+		// Countdown finished → teleport
+		data.remove("blackhorizernTeleportTicks");
+		ResourceKey<Level> BLACKHORIZERN = ResourceKey.create(Registries.DIMENSION, ResourceLocation.fromNamespaceAndPath("itemsmp", "blackhorizern"));
+		ServerLevel targetLevel = player.server.getLevel(BLACKHORIZERN);
+		if (targetLevel != null) {
+			player.teleportTo(targetLevel, 0.5, 80, 0.5, // spawn coords (adjust as needed)
+					player.getYRot(), player.getXRot());
 		}
 	}
 }
