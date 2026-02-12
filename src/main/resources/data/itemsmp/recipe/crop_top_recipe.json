@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "cdc",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:wool"
+    },
+    "b": {
+      "item": "itemsmp:magiccrystal"
+    },
+    "c": {
+      "item": "minecraft:gold_nugget"
+    },
+    "d": {
+      "item": "minecraft:leather_chestplate"
+    }
+  },
+  "result": {
+    "id": "itemsmp:crop_top_chestplate",
+    "count": 1
+  }
+}

@@ -35,6 +35,7 @@ public class ItemsmpModItems {
 	public static final DeferredItem<Item> KUNAI;
 	public static final DeferredItem<Item> EMERALD_KATANA;
 	public static final DeferredItem<Item> CRYSTAL_ORE;
+	public static final DeferredItem<Item> CROP_TOP_CHESTPLATE;
 	static {
 		MAGICCRYSTAL = REGISTRY.register("magiccrystal", MagiccrystalItem::new);
 		LUCKY_PICK = REGISTRY.register("lucky_pick", LuckyPickItem::new);
@@ -55,6 +56,7 @@ public class ItemsmpModItems {
 		KUNAI = REGISTRY.register("kunai", KunaiItem::new);
 		EMERALD_KATANA = REGISTRY.register("emerald_katana", EmeraldKatanaItem::new);
 		CRYSTAL_ORE = block(ItemsmpModBlocks.CRYSTAL_ORE);
+		CROP_TOP_CHESTPLATE = REGISTRY.register("crop_top_chestplate", CropTopItem.Chestplate::new);
 	}
 
 	// Start of user code block custom items

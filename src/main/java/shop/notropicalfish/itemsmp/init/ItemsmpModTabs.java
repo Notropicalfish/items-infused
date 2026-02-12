@@ -36,5 +36,6 @@ public class ItemsmpModTabs {
 				tabData.accept(ItemsmpModItems.KUNAI.get());
 				tabData.accept(ItemsmpModItems.EMERALD_KATANA.get());
 				tabData.accept(ItemsmpModBlocks.CRYSTAL_ORE.get().asItem());
+				tabData.accept(ItemsmpModItems.CROP_TOP_CHESTPLATE.get());
 			}).build());
 }

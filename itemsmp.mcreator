@@ -1253,6 +1253,57 @@
         ]
       },
       "path": "~/items/Black Heart"
+    },
+    {
+      "name": "CropTop",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_top",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itemsmp/models/item/crop_top_chestplate.json",
+          "src/main/java/shop/notropicalfish/itemsmp/item/CropTopItem.java"
+        ]
+      },
+      "path": "~/items/Short Chestplate"
+    },
+    {
+      "name": "CropTopRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_top_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itemsmp/recipe/crop_top_recipe.json",
+          "src/main/resources/data/itemsmp/advancement/recipes/crop_top_recipe.json"
+        ]
+      },
+      "path": "~/items/Short Chestplate"
+    },
+    {
+      "name": "CropTopHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_top_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/shop/notropicalfish/itemsmp/procedures/CropTopHurtProcedure.java"
+        ]
+      },
+      "path": "~/items/Short Chestplate"
     }
   ],
   "variable_elements": [
@@ -1570,6 +1621,9 @@
       "CUSTOM:Kunai",
       "CUSTOM:EmeraldKatana",
       "CUSTOM:CrystalOre"
+    ],
+    "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:CropTop.body"
     ]
   },
   "tab_element_order": {},
@@ -1643,7 +1697,8 @@
       "advancements.selftaughtninja.title": "Self Taught Ninja",
       "advancements.selftaughtninja.descr": "Craft Kunai",
       "advancements.magical_beginings.title": "Magical Beginnings",
-      "advancements.magical_beginings.descr": "Obtain Magic Crystal"
+      "advancements.magical_beginings.descr": "Obtain Magic Crystal",
+      "item.itemsmp.crop_top_chestplate": "Crop Top Chestplate"
     }
   },
   "metadata": {
@@ -1651,16 +1706,16 @@
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModGameRules.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModBlocks.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModItems.java",
-      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModEntityRenderers.java",
       "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModEntities.java",
-      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
-      "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModSounds.java",
-      "src/main/java/shop/notropicalfish/itemsmp/network/ItemsmpModVariables.java",
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModEntityRenderers.java",
       "src/main/resources/assets/itemsmp/sounds.json",
-      "src/main/resources/META-INF/accesstransformer.cfg"
+      "src/main/java/shop/notropicalfish/itemsmp/network/ItemsmpModVariables.java",
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/shop/notropicalfish/itemsmp/init/ItemsmpModSounds.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/shop/notropicalfish/itemsmp/ItemsmpMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {
